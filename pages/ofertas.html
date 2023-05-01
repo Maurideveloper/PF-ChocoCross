@@ -41,9 +41,43 @@
             </nav>
 
             <div class = "buscador">
+
                 <input class="buscar" type="search" name="buscar" placeholder="buscar">
-                <img src="..\images\anadir-al-carrito.png" alt="">
-                <img src="..\images\agregar-usuario.png" alt="">
+                
+                <li>
+                  <div>
+                      <img src="..\images\anadir-al-carrito.png" alt="">
+                      <div class="formulario">
+                        <div class="contenido1">
+                          <p>No existen compras registradas por el cliente</p>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                
+                    <li>
+                      <div>
+                        <img src="..\images\agregar-usuario.png" alt="Imagen de registro" id="registrarse-imagen">
+                        <div class="formulario">
+                          <form class="contenido">
+                            <p>Ingresa a tu cuenta</p>
+                            <div class="linea"></div>
+                            <p>Direccion de Email</p>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <p>Contraseña</p>
+                            <input type="password" id="password" name="password">
+                            <a href="">¿Has olvidado tu contraseña?</a>
+                            <br>
+                            <input type="submit" value="Iniciar sesion">
+                            <br>
+                            <input type="submit" value="Crear cuenta">
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                
             </div>
 
         </header>

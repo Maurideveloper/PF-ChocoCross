@@ -52,6 +52,10 @@ header.menu div.buscador input.buscar{
     line-height: 1.2;
 }
 
+.buscarResponsive {
+    display: none;
+}
+
 header.menu div.buscador img{
     width: 25px;
     height: 25px;
@@ -60,7 +64,6 @@ header.menu div.buscador img{
 header.menu nav {
     display: flex;
     align-items: center;
-    
 }
 
 header.menu nav ul {
@@ -85,6 +88,22 @@ header.menu nav ul li a{
     
 }
 
+header.menu nav ul li img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+header.menu nav ul .listaResponsive ul.responsive{
+    width: 0px;
+}
+
+header.menu nav ul .listaResponsive ul.responsive .linkResponsive {
+    border: 1px solid black;
+    background-color: rgb(46, 31, 6);
+    width: 110px;
+    left: -85px;
+}
 
 /*Menu de usario del header*/
 
@@ -104,8 +123,6 @@ div.buscador li div {
 div.buscador li .formulario {
     display: none;
     position: absolute;
-    left: 0;
-    background-color: white;
     padding: 10px;
     left: -235px;
 }
@@ -155,6 +172,18 @@ div.buscador li div:hover .formulario .contenido a{
     justify-content: flex-end;
 }
 
+/*Contenido de compras del usuario*/
+
+div.buscador li div:hover .formulario .contenido1 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: black;
+}
 
 
 /*Este header ul ul va solamente para el html de productos*/
@@ -217,7 +246,6 @@ main.menu article.art1 section {
     padding: 30px;
     font-family: 'Emilys Candy', cursive;
     font-size: xx-large;
-    font-weight: 590;
     border-radius: 30px 0px 0px 30px;
     box-shadow: 0px 0px 10px 10px #6b492e;
     border-top: 2px solid #29170a;
@@ -230,7 +258,7 @@ main.menu article.art1 section {
 main.menu article.art1 aside {
     background-color: #a3734e;
     border-radius: 0px 30px 30px 0px;
-    box-shadow: 15px 0px 20px 10px #6b492e;;
+    box-shadow: 15px 0px 20px 10px #6b492e;
     border-top: 2px solid #29170a;
     border-right: 2px solid #29170a;
     border-bottom: 2px solid #29170a;
@@ -291,15 +319,6 @@ main.menu article.art2 section h2 {
     text-shadow: 1px 1px 1px white;
 }
 
-main.menu article.art2 section div.contenedores {
-    display: flex;
-    background-color: white;
-    overflow-x: scroll;
-    max-width: 300px;
-    height: 130px;
-    padding: 10px;
-}
-
 main.menu article.art2 section div.contenedores img {
     padding: 10px;
 }
@@ -322,16 +341,21 @@ main.menu article.art2 div.conoce a {
 footer {
     margin-top: 100px;
     display: flex;
-    background-color: #a3734e;
+    background-color: #cebfac;
     justify-content: space-between;
     align-items: center;
     font-family: 'Playfair Display', serif;
     font-size: large;
     font-weight: bold;
+    border-top: 3px solid rgb(0, 0, 0);
 }
 footer img {
     width: 300px;
     height: 300px;
+}
+
+footer div {
+    color: black;
 }
 
 footer div.metodoDePago {
@@ -818,4 +842,394 @@ main.nosotros div.opciones div {
 
 main.nosotros div.textarea {
     margin-top: 50px;
+}
+
+@media (min-width: 867px) and (max-width: 945px) {
+    
+    /*Index responsive*/
+    
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    .gatito1 {
+        display: none;
+    }
+
+    .metodoDePago div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactanos div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  
+
+@media (min-width: 810px) and (max-width: 867px){
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: none;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        grid-row: span 2;
+        grid-column: 3;
+    }
+
+    footer div.mapa iframe {
+        width: 250px;
+        height: 300px; 
+    }
+
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 620px) and (max-width: 810px){
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: none;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+        justify-items: center
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        display: none;
+    }
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header.menu div.fotoNav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    header.menu nav {
+        grid-column: 1;
+    }
+
+    header.menu div.buscador {
+        grid-column: 3;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: block;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        display: none;
+    }
+
+    .responsive{
+        left: 40px;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+        justify-items: center
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        display: none;
+    }
+
+    .buscar {
+        display: none;
+    }
+
+    .buscarResponsive {
+        display: block;
+    }
+
+    .buscador {
+        flex-direction: row-reverse
+    }
+
+    main.menu article.art1 aside {
+        display: flex;
+        align-items: center;
+    }
+
+    main.menu article.art1 aside img {
+        width: 220px;
+        height: 220px;
+    }
+
+    main.menu article.art1 section {
+        font-size: x-large;
+    }
+
+    main.menu article.art2 section{
+        width: 500px;
+        height: 400px;
+    }
+
+    .carousel {
+        width: 350px;
+    }
+    
+    .carousel-item img {
+        max-height: 280px;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+
+    main.menu article.art2 div.conoce {
+        font-size: x-large;
+    }
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
 }

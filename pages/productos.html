@@ -20,15 +20,13 @@
 
         <header class = "menu">
 
-            <div>
+            <div class="fotoNav">
                 <a href="..\index.html" alt="Choco Cross Main" class="i1"><img src="..\images\ChocoCrossMain.png" alt=""></a>
             </div>
 
             <nav>
-
                 <ul>
-
-                    <li><a href=".\productos.html">Productos</a>
+                    <li class="productosResponsive"><a href="..\pages\productos.html">Productos</a>
                         <ul>
                             <li><a href="#bombones">Bombones</a></li>
                             <li><a href="#tabletas">Tabletas</a></li>
@@ -37,18 +35,61 @@
                         </ul>
                     </li>
 
-                    <li><a href=".\ofertas.html">Ofertas</a></li>
-                    <li><a href=".\recetas.html">Recetas</a></li>
-                    <li><a href=".\nosotros.html">Nosotros</a></li>
-
+                    <li class="Desktop"><a href="..\pages\ofertas.html">Ofertas</a></li>
+                    <li class="Desktop"><a href="..\pages\recetas.html">Recetas</a></li>
+                    <li class="Desktop"><a href="..\pages\nosotros.html">Nosotros</a></li>
+                    <li class="listaResponsive"><img src="..\images\menu.png" alt="">
+                      <ul class="responsive">
+                        <li class="linkResponsive" id="linkResponsiveMobile"><a href="..\pages\productos.html">Productos</a></li>
+                        <li class="linkResponsive"><a href="..\pages\ofertas.html">Ofertas</a></li>
+                        <li class="linkResponsive"><a href="..\pages\recetas.html">Recetas</a></li>
+                        <li class="linkResponsive"><a href="..\pages\nosotros.html">Nosotros</a></li>
+                      </ul>
+                    </li>
                 </ul>
-
             </nav>
 
             <div class = "buscador">
+
                 <input class="buscar" type="search" name="buscar" placeholder="buscar">
-                <img src="..\images\anadir-al-carrito.png" alt="">
-                <img src="..\images\agregar-usuario.png" alt="">
+
+                <img class="buscarResponsive" src="../images/buscar.png" alt="">
+                
+                <li>
+                  <div>
+                      <img src="..\images\anadir-al-carrito.png" alt="">
+                      <div class="formulario">
+                        <div class="contenido1">
+                          <p>No existen compras registradas por el cliente</p>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                
+                    <li>
+                      <div>
+                        <img src="..\images\agregar-usuario.png" alt="Imagen de registro" id="registrarse-imagen">
+                        <div class="formulario">
+                          <form class="contenido">
+                            <p>Ingresa a tu cuenta</p>
+                            <div class="linea"></div>
+                            <p>Direccion de Email</p>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <p>Contraseña</p>
+                            <input type="password" id="password" name="password">
+                            <a href="">¿Has olvidado tu contraseña?</a>
+                            <br>
+                            <input type="submit" value="Iniciar sesion">
+                            <br>
+                            <input type="submit" value="Crear cuenta">
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  
+
             </div>
 
         </header>
@@ -203,7 +244,7 @@
                     
                 </section>
 
-            </article>
+            </article> 
                 
             <div class="titulos" id="tabletas">
                 <h2>Tabletas!</h2>
@@ -568,9 +609,9 @@
                     <img class="logo1" src="..\images\servicio-de-centro-de-llamadas.png" alt="">
                 </div>
             </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1698.8008370168843!2d-60.71717434184002!3d-31.617372711249807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzAyLjYiUyA2MMKwNDInNTcuOSJX!5e0!3m2!1ses-419!2sar!4v1680023874759!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1698.8008370168843!2d-60.71717434184002!3d-31.617372711249807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzAyLjYiUyA2MMKwNDInNTcuOSJX!5e0!3m2!1ses-419!2sar!4v1680023874759!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </footer>
 
     </body>
