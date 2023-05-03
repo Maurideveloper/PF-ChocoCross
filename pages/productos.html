@@ -21,11 +21,12 @@
         <header class = "menu">
 
             <div class="fotoNav">
-                <a href="..\index.html" alt="Choco Cross Main" class="i1"><img src="..\images\ChocoCrossMain.png" alt=""></a>
+                <a href="..\index.html" alt="Choco Cross Main" class="i1"><img src="..\images\ChocoCrossMain.png" alt="ChocoCross"></a>
             </div>
 
             <nav>
                 <ul>
+                    <!-- Aparece solo en productos, es para ahorrar el tiempo de buscar el productos que buscas -->
                     <li class="productosResponsive"><a href="..\pages\productos.html">Productos</a>
                         <ul>
                             <li><a href="#bombones">Bombones</a></li>
@@ -38,7 +39,8 @@
                     <li class="Desktop"><a href="..\pages\ofertas.html">Ofertas</a></li>
                     <li class="Desktop"><a href="..\pages\recetas.html">Recetas</a></li>
                     <li class="Desktop"><a href="..\pages\nosotros.html">Nosotros</a></li>
-                    <li class="listaResponsive"><img src="..\images\menu.png" alt="">
+                    <!-- Lista responsive, aparece al bajar los pixeles -->
+                    <li class="listaResponsive"><img src="..\images\menu.png" alt="Menu">
                       <ul class="responsive">
                         <li class="linkResponsive" id="linkResponsiveMobile"><a href="..\pages\productos.html">Productos</a></li>
                         <li class="linkResponsive"><a href="..\pages\ofertas.html">Ofertas</a></li>
@@ -52,12 +54,13 @@
             <div class = "buscador">
 
                 <input class="buscar" type="search" name="buscar" placeholder="buscar">
-
-                <img class="buscarResponsive" src="../images/buscar.png" alt="">
+                <!-- Buscador responsive, aparece cuando bajan los pixeles -->
+                <img class="buscarResponsive" src="../images/buscar.png" alt="Buscador">
                 
                 <li>
                   <div>
-                      <img src="..\images\anadir-al-carrito.png" alt="">
+                    <!-- Interfaces para los clientes -->
+                      <img src="..\images\anadir-al-carrito.png" alt="carrito">
                       <div class="formulario">
                         <div class="contenido1">
                           <p>No existen compras registradas por el cliente</p>
@@ -68,6 +71,7 @@
                 
                     <li>
                       <div>
+                         <!-- Interfaces para los clientes, inicio de usuario -->
                         <img src="..\images\agregar-usuario.png" alt="Imagen de registro" id="registrarse-imagen">
                         <div class="formulario">
                           <form class="contenido">
@@ -78,6 +82,7 @@
                             <br>
                             <p>Contraseña</p>
                             <input type="password" id="password" name="password">
+                            <!-- Interfaces para los clientes, deberia llevar a una pagina de register-->
                             <a href="">¿Has olvidado tu contraseña?</a>
                             <br>
                             <input type="submit" value="Iniciar sesion">
@@ -99,7 +104,7 @@
         <header class="nomain">
 
             <nav>
-                <a href="..\index.html"><img src="..\images\home.png" alt=""></a>
+                <a class="homeNoMain" href="..\index.html"><img src="..\images\home.png" alt="home"></a>
                 <a href="..\index.html">Home</a>
                 <span> | </span>
                 <span class="secciones">Productos</span>
@@ -112,7 +117,7 @@
         <main class="productos">
 
             <div class="filtros">
-                
+                <!-- La idea es que con JS se puedan ordenar los productos buscados, mas que nada en contenido -->
                 <li class="elementosF" id="elementosF1"><div>Filtar</div>
                     
                     <ul>
@@ -123,7 +128,7 @@
                     </ul>
 
                 </li>
-
+                <!-- La idea es que con JS se puedan ordenar los productos buscados, mas que nada en precios -->
                 <li class="elementosF" id="elementosF2"><div>Ordenar</div>
                     
                     <ul>
@@ -145,7 +150,7 @@
                 <section>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -153,7 +158,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -161,7 +166,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -169,7 +174,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -177,7 +182,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -185,7 +190,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -193,7 +198,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -201,7 +206,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -209,7 +214,7 @@
                     </div>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -217,7 +222,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -225,7 +230,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -233,7 +238,7 @@
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
@@ -255,100 +260,100 @@
                 <section>
                     
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta1.jpg" alt="">
+                        <img src="..\images\chocolates\tabletas\tableta1.jpg" alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta2.jpg"  alt="">
+                        <img src="..\images\chocolates\tabletas\tableta2.jpg"  alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta3.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta3.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta4.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta4.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta5.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta5.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta6.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta6.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta7.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta7.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta8.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta8.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
                     
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta9.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta9.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta10.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta10.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta11.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta11.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\tabletas\tableta12.jpg"   alt="">
+                        <img src="..\images\chocolates\tabletas\tableta12.jpg"   alt="tableta">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
                         <button>
-                            <img src="..\images\carrito.png" alt="">
+                            <img src="..\images\carrito.png" alt="carrito">
                         </button>
                     </div>
                     
@@ -365,100 +370,100 @@
                 <section>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
                         <button>
-                            <img src="..\images\carrito.png" alt="">
+                            <img src="..\images\carrito.png" alt="carrito">
                         </button>
                     </div>
                     
@@ -475,100 +480,100 @@
                 <section>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon1.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon2.jpg" alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon3.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon4.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon5.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon6.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon7.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon8.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
                     
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon9.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon10.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon11.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
-                        <button><img src="..\images\carrito.png" alt=""></button>
+                        <button><img src="..\images\carrito.png" alt="carrito"></button>
                     </div>
 
                     <div>
-                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="">
+                        <img src="..\images\chocolates\Bombones\Bombon12.jpg"  alt="bombom">
                         <p class="nombre">Bombones</p>
                         <p class="contenido">Descripcion</p>
                         <p class="precio">Precio</p>
                         <button>
-                            <img src="..\images\carrito.png" alt="">
+                            <img src="..\images\carrito.png" alt="carrito">
                         </button>
                     </div>
                     
@@ -594,8 +599,8 @@
                 <p>Metodos de pago:</p>
                 
                 <div>
-                    <img class="logo1" src="..\images\metodo-de-pago.png" alt="">
-                    <img class="logo2" src="..\images\version-horizontal-large-logo-mercado-pago.png" alt="">
+                    <img class="logo1" src="..\images\metodo-de-pago.png" alt="efectivo">
+                    <img class="logo2" src="..\images\version-horizontal-large-logo-mercado-pago.png" alt="mercadoPago">
                 </div>
             </div>
 
@@ -603,10 +608,10 @@
                 <p>Contactanos:</p>
                 <p>342-155031306</p>
                 <div>
-                    <img class="logo1" src="..\images\instagram.png" alt="">
-                    <img class="logo1" src="..\images\whatsapp.png" alt="">
-                    <img class="logo1" src="..\images\globos-de-texto.png" alt="">
-                    <img class="logo1" src="..\images\servicio-de-centro-de-llamadas.png" alt="">
+                    <img class="logo1" src="..\images\instagram.png" alt="instagram">
+                    <img class="logo1" src="..\images\whatsapp.png" alt="whatsapp">
+                    <img class="logo1" src="..\images\globos-de-texto.png" alt="mensaje">
+                    <img class="logo1" src="..\images\servicio-de-centro-de-llamadas.png" alt="llamada">
                 </div>
             </div>
             <div class="mapa">

@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster+Two&family=Playfair+Display&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
+/*Proximas correciones a tener en cuenta para los diseños. Hacer la version desktop un poco mas grande, que las letras sean mas grandes y marcadas, para que se pueda leer sin forzar la vista. Ocupar espacios vacios con algun diseño bonito. Tengo en cuenta que quiza el form puede ser mejor, a lo mejor pongo acordiones para las opciones. El mapa no se que "tan" importante es para la version mobile. Por ultimo mejorar la paleta de colores en lo posible.*/
+
 /*Body main*/
 
 body {
@@ -220,13 +222,13 @@ header.menu nav ul li a:hover {
     width: 107px;
 }
 
-/* empieza el menu del index*/
+/* empieza el menu del Index*/
 
 main.menu {
     margin-top: 100px;
 }
 
-/*art 1 y la imagen*/
+/*art 1 y la imagen, el parrafo y la foto de ChocoCross*/
 
 main.menu article.art1 {
     display: flex;
@@ -270,7 +272,7 @@ main.menu article.art1 aside img {
     height: 320px;
 }
 
-/*art 2 comparten los articulos del index, carrusel*/
+/*art 2 comparten los articulos del index + carrusel*/
 
 .carousel {
     width: 450px;
@@ -323,7 +325,7 @@ main.menu article.art2 section div.contenedores img {
     padding: 10px;
 }
 
-/*conoce es el ultimo articulo del index*/
+/*conoce es el ultimo articulo del index, es un link a productos*/
 
 main.menu article.art2 div.conoce {
     margin-top: 100px;
@@ -336,7 +338,7 @@ main.menu article.art2 div.conoce a {
    color: black;
 }
 
-/*footer de todas las paginas*/
+/*footer de todas las paginas, lo comparten*/
 
 footer {
     margin-top: 100px;
@@ -384,7 +386,6 @@ footer img.logo2 {
 header.nomain {
     display: flex;
     justify-content: center;
-    /*Problema con el header noMain de ofertas, se bugueaba por el bs*/
     margin-top: 7px;
 }
 
@@ -427,7 +428,7 @@ main.productos {
     flex-direction: column;
 }
 
-/*Filtros para ondenar los productos, js*/
+/*Filtros para ondenar los productos, esto se va a completar con JS o React*/
 
 main.productos div.filtros  {
     margin-top: 20px;
@@ -500,7 +501,7 @@ main.productos div.titulos {
     border-radius: 20px;
 }
 
-/*Seccion de los productos*/ 
+/*Seccion de los productos, contenedores 4*3, 12 imagenes por seccion, me gustaria poner un contenedor grande donde guarde 12 imagenes y puedar girarlo para conocer otras 12 imagenes, pero se hace con JS*/ 
 
 main.productos article.contenedor1 section  {
     display: grid;
@@ -556,6 +557,7 @@ main.productos article.contenedor1 section div img {
     width: 300px;
 }
 
+/*Link a ofertas*/
 
 main.productos div.conoce1 {
     display: flex;
@@ -574,14 +576,18 @@ main.productos div.conoce1 a {
     color: black;
 }
 
-/* Codigo de ofertas*/
+main.menu article.art2 div.conoce a p{
+    margin: 5px;
+}
+
+/* Codigo de ofertas, todavia no puse las imagenes ya que pueden variar, pero deje las imagenes en X para darme una idea, problablemente las cambie por una unica imagen con una forma de escalera entre 2 (lo modifico con photofea), queda mas presentable.*/
 
 main.ofertas {
     display: flex;
     flex-direction: column;
 }
 
-/* Parallax de ofertas */
+/* Titulo de ofertas */
 
 main.ofertas div.tituloOfertas {
     margin-top: 100px;
@@ -667,6 +673,8 @@ main.ofertas div.conoce {
     border-radius: 30px;
 }
 
+/*Link a nosotros*/
+
 main.ofertas div.conoce a {
     color: black;
 }
@@ -700,8 +708,6 @@ main.recetas div.tituloRecetas img {
 }
 
 /*Receta de nombre y su contenido*/
-
-
 
 main.recetas div.nombreRecetas {
     margin-top: 30px;
@@ -777,15 +783,18 @@ main.recetas div.contenidoRecetas div.videoRecetas iframe {
 main.nosotros {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-/*Parallax de nosotros*/
-
-main.nosotros div.parallax1 {
+main.nosotros div.explicacion {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+    background-color: #cebfac;
+    width: 500px;
+    border-radius: 25px;
 }
 
 /*Contenedor de formulario entero*/
@@ -838,6 +847,13 @@ main.nosotros div.opciones div {
     align-items: center;
 }
 
+main.nosotros div.opciones div p {
+    font-weight: 600;
+    background-color: #ceac92;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 /*Contenedor interno texto general*/
 
 main.nosotros div.textarea {
@@ -848,14 +864,17 @@ main.nosotros div.textarea {
     
     /*Index responsive*/
     
+    /*El formulario del hover ingresa tu cuenta se me iba muy a la derecha, por eso el left*/
     div.buscador li .formulario {
         left: -285px;
     }
 
+    /*afuera el gatito*/
     .gatito1 {
         display: none;
     }
 
+    /*Footer modificado*/
     .metodoDePago div{
         display: flex;
         flex-direction: column;
@@ -868,7 +887,7 @@ main.nosotros div.textarea {
         grid-gap: 10px;
     }
 
-    /*Productos responsive*/
+    /*Productos responsive, 2x6 en cards*/
 
     main.productos article.contenedor1 section {
         grid-template-columns: repeat(2, 1fr);
@@ -885,6 +904,7 @@ main.nosotros div.textarea {
         left: -285px;
     }
 
+    /*Se modifica el nav para que aparezca solo productos, los demas estan en hamburguesa*/
     header.menu nav ul li img{
         display: block;
     }
@@ -915,6 +935,8 @@ main.nosotros div.textarea {
         border-right: 2px solid black;
         border-left: 2px solid black;
     }
+
+    /*Se modifica el footer nuevamente*/
 
     footer {
         display: grid;
@@ -971,6 +993,8 @@ main.nosotros div.textarea {
 
 @media (min-width: 620px) and (max-width: 810px){
 
+    /*Index*/
+
     .gatito1 {
         display: none;
     }
@@ -1010,6 +1034,8 @@ main.nosotros div.textarea {
         border-left: 2px solid black;
     }
 
+    /*Footer, se saca el map*/
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1044,7 +1070,7 @@ main.nosotros div.textarea {
         display: flex;
     }
 
-
+    /*Mapa afuera*/
     footer div.mapa {
         display: none;
     }
@@ -1066,8 +1092,10 @@ main.nosotros div.textarea {
 
 }
 
-@media (max-width: 620px) {
+@media (min-width: 500px) and (max-width: 620px) {
     
+    /*Index*/
+
     .gatito1 {
         display: none;
     }
@@ -1133,6 +1161,8 @@ main.nosotros div.textarea {
         border-left: 2px solid black;
     }
 
+    /*Footer*/
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1172,6 +1202,8 @@ main.nosotros div.textarea {
         display: none;
     }
 
+    /*Se modifica el input de buscar por un icono, que deberia invocar un buscador abajo pero lo pienso hacer con un click y if de JS*/
+
     .buscar {
         display: none;
     }
@@ -1183,6 +1215,8 @@ main.nosotros div.textarea {
     .buscador {
         flex-direction: row-reverse
     }
+
+    /*Se modifica los articulos para que queden acoplados a la medida*/
 
     main.menu article.art1 aside {
         display: flex;
@@ -1217,7 +1251,207 @@ main.nosotros div.textarea {
         font-size: x-large;
     }
 
-    /*Productos responsive*/
+    /*Productos responsive, se mofician las cards para que queden a medida*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 500px) /*La idea es que quede bien hasta dispositivos de 360px de widht. Por ejemplo samsumgs algo viejos pero todavia usados. Lo unico que todavia no puedo cambiar son las cards de productos, deberia haber una opcion para hacerlas girar con un contendor grande, pero se necesita JS*/ {
+
+    /*Index*/
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header.menu div.fotoNav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    header.menu div.fotoNav img {
+        width: 150px;
+        height: 45px;
+    }
+
+    header.menu div.buscador img{
+        width: 20px;
+        height: 20px;
+    }
+
+    header.menu nav {
+        grid-column: 1;
+    }
+
+    header.menu div.buscador {
+        grid-column: 3;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    #linkResponsiveMobile{
+        display: block;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        display: none;
+    }
+
+    .responsive{
+        left: 40px;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    header.nomain nav {
+        justify-content: space-evenly;
+    }
+
+    header.nomain nav a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header.nomain nav a img {
+        margin-left: 0px; 
+    }
+
+    /*Footer*/
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 150px 200px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    footer img {
+        grid-row: 1;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 3;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        display: none;
+    }
+
+    /*Modificaciones de header*/
+
+    .buscar {
+        display: none;
+    }
+
+    .buscarResponsive {
+        display: block;
+    }
+
+    .buscador {
+        flex-direction: row-reverse
+    }
+
+    /*Modificaciones los art, nuevamente*/
+
+    main.menu article.art1 aside {
+        display: flex;
+        align-items: center;
+    }
+
+    main.menu article.art1 aside img {
+        width: 160px;
+        height: 160px;
+    }
+
+    main.menu article.art1 section {
+        font-size: large;
+    }
+
+    main.menu article.art2 section{
+        width: 350px;
+        height: 290px;
+    }
+
+    main.menu article.art2 section h2{
+        font-size: larger;
+    }
+
+    .carousel {
+        width: 250px;
+    }
+    
+    .carousel-item img {
+        max-height: 180px;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+
+    main.menu article.art2 div.conoce {
+        font-size: large;
+        padding-bottom: 0px;
+    }
+
+    /*Productos responsive, aca me gustaria hacer lo que dije arriba de las cards, pero todavia no es posible*/
 
     main.productos article.contenedor1 section {
         grid-template-columns: repeat(2, 1fr);
