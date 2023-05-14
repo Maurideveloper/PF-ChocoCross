@@ -1,0 +1,1469 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster+Two&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster+Two&family=Playfair+Display&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+/*Proximas correciones a tener en cuenta para los diseños. Hacer la version desktop un poco mas grande, que las letras sean mas grandes y marcadas, para que se pueda leer sin forzar la vista. Ocupar espacios vacios con algun diseño bonito. Tengo en cuenta que quiza el form puede ser mejor, a lo mejor pongo acordiones para las opciones. El mapa no se que "tan" importante es para la version mobile. Por ultimo mejorar la paleta de colores en lo posible.*/
+
+/*Body main*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/fondochocolate2.0-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Header del index*/
+
+header.menu {
+    padding: 1em;
+    background: #a3734e;
+    position: sticky;
+    top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+    border: 1px solid black;
+    z-index: 999;
+}
+
+header.menu div {
+    display: flex;
+    align-items: center;
+}
+
+header.menu div img {
+    width: 200px;
+    height: 60px;
+}
+
+header.menu div.buscador{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header.menu div.buscador input.buscar{
+    padding: 0px;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.buscarResponsive {
+    display: none;
+}
+
+header.menu div.buscador img{
+    width: 25px;
+    height: 25px;
+}
+
+header.menu nav {
+    display: flex;
+    align-items: center;
+}
+
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+header.menu nav ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+header.menu nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: .2em 1em;
+    font-size: larger;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+header.menu nav ul li img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+header.menu nav ul .listaResponsive ul.responsive{
+    width: 0px;
+}
+
+header.menu nav ul .listaResponsive ul.responsive .linkResponsive {
+    border: 1px solid black;
+    background-color: rgb(46, 31, 6);
+    width: 110px;
+    left: -85px;
+}
+
+/*Menu de usario del header*/
+
+div.buscador {
+    width: 100%;
+}
+
+div.buscador li {
+    list-style: none;
+}
+
+div.buscador li div {
+    display: inline-block;
+    position: relative;
+}
+
+div.buscador li .formulario {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    left: -235px;
+}
+
+div.buscador li div:hover .formulario {
+    display: block;
+    z-index: 1;
+    flex-direction: column;
+    background: #d1c2a1;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+div.buscador li div:hover .formulario .contenido {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: black;
+}
+
+
+div.buscador li div:hover .formulario .contenido .linea {
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+
+div.buscador li div:hover .formulario .contenido :nth-child(1){
+    margin: 0px;
+}
+
+div.buscador li div:hover .formulario .contenido :nth-child(3){
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+div.buscador li div:hover .formulario .contenido :nth-child(6){
+    margin-bottom: 0px;
+}
+
+div.buscador li div:hover .formulario .contenido a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+/*Contenido de compras del usuario*/
+
+div.buscador li div:hover .formulario .contenido1 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*Este header ul ul va solamente para el html de productos*/
+
+header.menu nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+header.menu nav ul li:hover ul {
+    display: block;
+}
+
+header.menu nav ul li:hover ul {
+    border: 1px solid black;
+    background-color: rgb(46, 31, 6);
+    width: 100%;
+}
+
+header.menu nav ul li:hover ul li a{
+    display: block;
+    color: white;
+    font-size: larger;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*El header de arriba ul ul va solamente para el html de productos*/
+
+/* cambia de color con el hover*/
+
+header.menu nav ul li a:hover {
+    background: rgb(114, 90, 59);
+    color: white;
+    width: 107px;
+}
+
+/* empieza el menu del Index*/
+
+main.menu {
+    margin-top: 100px;
+}
+
+/*art 1 y la imagen, el parrafo y la foto de ChocoCross*/
+
+main.menu article.art1 {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    height: 320px;
+}
+
+main.menu article.art1 div.contenedorInicio {
+    display: flex;
+}
+
+
+main.menu article.art1 section {
+    background-color: #a3734e;
+    padding: 30px;
+    font-family: 'Emilys Candy', cursive;
+    font-size: xx-large;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: 0px 0px 10px 10px #6b492e;
+    border-top: 2px solid #29170a;
+    border-left: 2px solid #29170a;
+    border-bottom: 2px solid #29170a;
+    text-shadow: 1px 1px 1px rgb(41, 30, 20);
+    color: black;
+}
+
+main.menu article.art1 aside {
+    background-color: #a3734e;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 15px 0px 20px 10px #6b492e;
+    border-top: 2px solid #29170a;
+    border-right: 2px solid #29170a;
+    border-bottom: 2px solid #29170a;
+
+}
+
+main.menu article.art1 aside img {
+    width: 320px;
+    height: 320px;
+}
+
+/*art 2 comparten los articulos del index + carrusel*/
+
+.carousel {
+    width: 450px;
+}
+
+.carousel-item img {
+    max-height: 380px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+
+section div.row {
+    justify-content: center;
+}
+
+
+main.menu article.art2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+main.menu article.art2 section{
+    background-color: #a3734e;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(226, 217, 204));
+    margin: 50px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+main.menu article.art2 section h2 {
+    padding-top: 10px;
+    color: black;
+    font-size: xxx-large;
+    text-shadow: 1px 1px 1px white;
+}
+
+main.menu article.art2 section div.contenedores img {
+    padding: 10px;
+}
+
+/*conoce es el ultimo articulo del index, es un link a productos*/
+
+main.menu article.art2 div.conoce {
+    margin-top: 100px;
+    background-color: #a3734e;
+    border-radius: 20px;
+    padding: 0px 30px 0px 30px;
+}
+
+main.menu article.art2 div.conoce a {
+   color: black;
+}
+
+/*footer de todas las paginas, lo comparten*/
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    background-color: #cebfac;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+    font-weight: bold;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+footer img {
+    width: 300px;
+    height: 300px;
+}
+
+footer div {
+    color: black;
+}
+
+footer div.metodoDePago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img.logo1 {
+    width: 50px;
+    height: 50px;
+}
+
+footer img.logo2 {
+    width: 150px;
+    height: 60px;
+}
+
+/*nav que va en las paginas no index*/
+header.nomain {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+header.nomain nav{
+    display: flex;
+    background-color: #75553d;
+    color: white;
+    border-radius: 20px;
+    width: 80%;
+    
+}
+
+header.nomain nav a {
+    color: white;
+    margin-right: 30px;
+    margin-left: 10px;
+    font-size: larger;
+    font-family: 'Lobster Two', cursive;
+}
+
+header.nomain nav a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 100px;
+}
+
+header.nomain nav span.secciones {
+    margin-left: 30px;
+    font-size: larger;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* Pagina de productos*/
+
+main.productos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Filtros para ondenar los productos, esto se va a completar con JS o React*/
+
+main.productos div.filtros  {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+
+main.productos div.filtros li.elementosF {
+    background-color: antiquewhite;
+    font-family: 'Lobster Two', cursive;
+    font-size: large;
+    list-style: none;
+    display: flex;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    
+}
+
+#elementosF1 {
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#elementosF2{
+    border-radius: 0px 10px 10px 0px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+main.productos div.filtros li.elementosF ul {
+    position: absolute;
+    display: none;
+}
+
+main.productos div.filtros li.elementosF:hover ul {
+    display: block;
+    list-style: none;
+    margin-top: 23px;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+main.productos div.filtros li.elementosF:hover ul li {
+    background-color: rgb(46, 31, 6);
+}
+
+main.productos div.filtros:hover ul li a{
+    color: white;
+    font-size: larger;
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+    
+}
+
+/*Titulo de los productos*/
+
+main.productos div.titulos {
+    margin-top: 100px;
+    font-family: 'Lobster Two', cursive;
+    font-size: x-large;
+    background-color: beige;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+/*Seccion de los productos, contenedores 4*3, 12 imagenes por seccion, me gustaria poner un contenedor grande donde guarde 12 imagenes y puedar girarlo para conocer otras 12 imagenes, pero se hace con JS*/ 
+
+main.productos article.contenedor1 section  {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+main.productos article.contenedor1 section div {
+    padding: 15px;
+    margin: 20px 40px 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(226, 217, 204));
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    background-color: #a3734e;
+}
+
+main.productos article.contenedor1 section div p.nombre {
+    font-size: xx-large;
+    margin: 5px;
+}
+
+main.productos article.contenedor1 section div p.contenido {
+    font-size: large;
+}
+
+main.productos article.contenedor1 section div p.precio {
+    font-size: x-large;
+    margin: 5px;
+}
+
+
+main.productos article.contenedor1 section div button {
+    width: 200px;
+    height: 45px;
+    background-color:#ceac92;
+    border: 0px;
+    border-radius: 15px;
+}
+
+main.productos article.contenedor1 section div button img {
+    width: 40px;
+    height: 40px;
+}
+
+main.productos article.contenedor1 section div img {
+    height: 300px;
+    width: 300px;
+}
+
+/*Link a ofertas*/
+
+main.productos div.conoce1 {
+    display: flex;
+    margin-top: 100px;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Lobster Two', cursive;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+main.productos div.conoce1 a {
+    color: black;
+}
+
+main.menu article.art2 div.conoce a p{
+    margin: 5px;
+}
+
+/* Codigo de ofertas, todavia no puse las imagenes ya que pueden variar, pero deje las imagenes en X para darme una idea, problablemente las cambie por una unica imagen con una forma de escalera entre 2 (lo modifico con photofea), queda mas presentable.*/
+
+main.ofertas {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo de ofertas */
+
+main.ofertas div.tituloOfertas {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+main.ofertas div.tituloOfertas img {
+    width: 100px;
+    height: 100px;
+}
+
+main.ofertas div.tituloOfertas p {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 150px;
+    color: #29170a;
+    background-color: rgba(233, 215, 159, 0.3);
+}
+
+/* Contenedor general */
+
+main.ofertas div.contenedorTotal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Contenedores internos */
+
+main.ofertas div.contenedorTotal article section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background: wheat;
+    width: 500px;
+    height: 400px;
+    border-radius: 60px;   
+}
+
+main.ofertas div.contenedorTotal article section div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedores internos izquierdo */
+
+main.ofertas div.contenedorTotal article.contenedorinterno1 {
+    font-family: 'Lobster Two', cursive;
+}
+
+.imagenOfertas {
+    width: 200px;
+    height: 200px;
+}
+
+/* Contenedores internos derecho */
+
+main.ofertas div.contenedorTotal article.contenedorinterno2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* Ultimo contenedor de ofertas, personalizacion */
+
+main.ofertas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.ofertas div.conoce {
+    display: flex;
+    margin-top: 100px;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Lobster Two', cursive;
+    width: 500px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+/*Link a nosotros*/
+
+main.ofertas div.conoce a {
+    color: black;
+}
+
+/*Codigo de Recetas*/
+
+main.recetas {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Recetas titulo*/
+
+main.recetas div.tituloRecetas {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.recetas div.tituloRecetas p {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 150px;
+    color: #29170a;
+    background-color: rgba(233, 215, 159, 0.3);
+}
+
+main.recetas div.tituloRecetas img {
+    width: 100px;
+    height: 100px;
+}
+
+/*Receta de nombre y su contenido*/
+
+main.recetas div.nombreRecetas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+main.recetas div.nombreRecetas h2 {
+    margin-top: 100px;
+    font-family: 'Lobster Two', cursive;
+    font-size: x-large;
+    background-color: #29170a;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(192, 148, 85));
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+main.recetas div.contenidoRecetas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main.recetas div.contenidoRecetas div.pasoRecetas {
+    background-image: url(../images/fa22551f4470b96099a1c357c48e2a40aa.jpeg);
+    height: 500px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    border: 3px solid rgb(255, 255, 255);
+    justify-content: center;
+    
+}
+
+main.recetas div.contenidoRecetas div.pasoRecetas {
+    padding-right: 40px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main.recetas div.contenidoRecetas div.pasoRecetas p{
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+main.recetas div.contenidoRecetas div.videoRecetas {
+    height: 500px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #29170a;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(192, 148, 85));
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 10px #6b492e;;
+}
+
+main.recetas div.contenidoRecetas div.videoRecetas iframe {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+/*Codigo de nosotros*/ 
+
+main.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.nosotros div.explicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    background-color: #cebfac;
+    width: 500px;
+    border-radius: 25px;
+}
+
+/*Contenedor de formulario entero*/
+
+main.nosotros div.formulario {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contenedor interno de nombres*/
+
+main.nosotros div.nombreYapellido {
+    display: flex;
+}
+
+main.nosotros div.nombreYapellido div {
+    margin: 0px 10px 0px 10px;
+}
+
+main.nosotros div.nombreYapellido div input {
+    width: 400px;
+}
+
+/*Contenedor interno email*/
+
+main.nosotros div.email {
+    margin-top: 40px;
+}
+
+main.nosotros div.email input {
+width: 828px;
+}
+
+/*Contenedor interno inputs (opciones)*/
+
+main.nosotros div.opciones {
+    margin-top: 50px;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+
+main.nosotros div.opciones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.nosotros div.opciones div p {
+    font-weight: 600;
+    background-color: #ceac92;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Contenedor interno texto general*/
+
+main.nosotros div.textarea {
+    margin-top: 50px;
+}
+
+@media (min-width: 867px) and (max-width: 945px) {
+    
+    /*Index responsive*/
+    
+    /*El formulario del hover ingresa tu cuenta se me iba muy a la derecha, por eso el left*/
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    /*afuera el gatito*/
+    .gatito1 {
+        display: none;
+    }
+
+    /*Footer modificado*/
+    .metodoDePago div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactanos div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    /*Productos responsive, 2x6 en cards*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  
+
+@media (min-width: 810px) and (max-width: 867px){
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    /*Se modifica el nav para que aparezca solo productos, los demas estan en hamburguesa*/
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: none;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    /*Se modifica el footer nuevamente*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        grid-row: span 2;
+        grid-column: 3;
+    }
+
+    footer div.mapa iframe {
+        width: 250px;
+        height: 300px; 
+    }
+
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 620px) and (max-width: 810px){
+
+    /*Index*/
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: none;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    /*Footer, se saca el map*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+        justify-items: center
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+    /*Mapa afuera*/
+    footer div.mapa {
+        display: none;
+    }
+
+    /*Productos responsive*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 620px) {
+    
+    /*Index*/
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header.menu div.fotoNav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    header.menu nav {
+        grid-column: 1;
+    }
+
+    header.menu div.buscador {
+        grid-column: 3;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+    }
+
+    #linkResponsiveMobile{
+        display: block;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        display: none;
+    }
+
+    .responsive{
+        left: 40px;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    /*Footer*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        padding-bottom: 30px;
+        justify-items: center
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: span 2;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        display: none;
+    }
+
+    /*Se modifica el input de buscar por un icono, que deberia invocar un buscador abajo pero lo pienso hacer con un click y if de JS*/
+
+    .buscar {
+        display: none;
+    }
+
+    .buscarResponsive {
+        display: block;
+    }
+
+    .buscador {
+        flex-direction: row-reverse
+    }
+
+    /*Se modifica los articulos para que queden acoplados a la medida*/
+
+    main.menu article.art1 aside {
+        display: flex;
+        align-items: center;
+    }
+
+    main.menu article.art1 aside img {
+        width: 220px;
+        height: 220px;
+    }
+
+    main.menu article.art1 section {
+        font-size: x-large;
+    }
+
+    main.menu article.art2 section{
+        width: 500px;
+        height: 400px;
+    }
+
+    .carousel {
+        width: 350px;
+    }
+    
+    .carousel-item img {
+        max-height: 280px;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+
+    main.menu article.art2 div.conoce {
+        font-size: x-large;
+    }
+
+    /*Productos responsive, se mofician las cards para que queden a medida*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 500px) /*La idea es que quede bien hasta dispositivos de 360px de widht. Por ejemplo samsumgs algo viejos pero todavia usados. Lo unico que todavia no puedo cambiar son las cards de productos, deberia haber una opcion para hacerlas girar con un contendor grande, pero se necesita JS*/ {
+
+    /*Index*/
+
+    .gatito1 {
+        display: none;
+    }
+
+    div.buscador li .formulario {
+        left: -285px;
+    }
+
+    header.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header.menu div.fotoNav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    header.menu div.fotoNav img {
+        width: 150px;
+        height: 45px;
+    }
+
+    header.menu div.buscador img{
+        width: 20px;
+        height: 20px;
+    }
+
+    header.menu nav {
+        grid-column: 1;
+    }
+
+    header.menu div.buscador {
+        grid-column: 3;
+    }
+
+    header.menu nav ul li img{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    #linkResponsiveMobile{
+        display: block;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        display: none;
+    }
+
+    .responsive{
+        left: 40px;
+    }
+
+    header.menu nav ul {
+        align-items: center;
+    }
+
+    header.menu div {
+        justify-content: space-around
+    }
+    
+    header.menu nav ul li.Desktop {
+        display: none;
+    }
+
+    header.menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header.menu nav ul li.productosResponsive {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    header.nomain nav {
+        justify-content: space-evenly;
+    }
+
+    header.nomain nav a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header.nomain nav a img {
+        margin-left: 0px; 
+    }
+
+    /*Footer*/
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 150px 200px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    footer img {
+        grid-row: 1;
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .metodoDePago {
+        grid-row: 2;
+    }
+
+    footer .metodoDePago div {
+        display: flex;
+    }
+
+    footer .contactanos {
+        grid-row: 3;
+    }
+    
+    footer .contactanos div {
+        display: flex;
+    }
+
+
+    footer div.mapa {
+        display: none;
+    }
+
+    /*Modificaciones de header*/
+
+    .buscar {
+        display: none;
+    }
+
+    .buscarResponsive {
+        display: block;
+    }
+
+    .buscador {
+        flex-direction: row-reverse
+    }
+
+    /*Modificaciones los art, nuevamente*/
+
+    main.menu article.art1 aside {
+        display: flex;
+        align-items: center;
+    }
+
+    main.menu article.art1 aside img {
+        width: 160px;
+        height: 160px;
+    }
+
+    main.menu article.art1 section {
+        font-size: large;
+    }
+
+    main.menu article.art2 section{
+        width: 350px;
+        height: 290px;
+    }
+
+    main.menu article.art2 section h2{
+        font-size: larger;
+    }
+
+    .carousel {
+        width: 250px;
+    }
+    
+    .carousel-item img {
+        max-height: 180px;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+
+    main.menu article.art2 div.conoce {
+        font-size: large;
+        padding-bottom: 0px;
+    }
+
+    /*Productos responsive, aca me gustaria hacer lo que dije arriba de las cards, pero todavia no es posible*/
+
+    main.productos article.contenedor1 section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.productos article.contenedor1 section div {
+        margin: 10px;
+    }
+
+    main.productos article.contenedor1 section div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}

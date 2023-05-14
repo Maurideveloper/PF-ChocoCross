@@ -1,3 +1,12 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster+Two&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster+Two&family=Playfair+Display&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url(./base/_operadores.scss);
+@import url(./base/_mixin.scss);
+@import url(./componentes/_body.scss);
+@import url(./componentes/_header.scss);
+@import url(./componentes/_main.scss);
+@import url(./componentes/_footer.scss);
 
 /*# sourceMappingURL=styles.css.map */
