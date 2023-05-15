@@ -197,9 +197,6 @@ header.menu nav ul ul {
 
 header.menu nav ul li:hover ul {
     display: block;
-}
-
-header.menu nav ul li:hover ul {
     border: 1px solid black;
     background-color: rgb(46, 31, 6);
     width: 100%;

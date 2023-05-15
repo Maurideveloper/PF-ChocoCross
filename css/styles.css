@@ -2,11 +2,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster+Two&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster+Two&family=Playfair+Display&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
-@import url(./base/_operadores.scss);
-@import url(./base/_mixin.scss);
-@import url(./componentes/_body.scss);
-@import url(./componentes/_header.scss);
-@import url(./componentes/_main.scss);
-@import url(./componentes/_footer.scss);
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  background-image: url(../images/fondochocolate2.0-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header.menu {
+  padding: 1em;
+  margin: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #a3734e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: none;
+  position: sticky;
+  z-index: 999;
+}
+header.menu div img {
+  width: 200px;
+  height: 60px;
+}
+header.menu nav {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: none;
+}
+header.menu nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+header.menu nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header.menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.2em 1em;
+  font-family: "Lobster Two", cursive;
+  font-size: larger;
+}
+header.menu nav ul li img {
+  display: none;
+  width: 25px;
+  height: 25px;
+}
+header.menu nav ul li.listaResponsive ul.responsive {
+  width: 0px;
+}
+header.menu div.buscador {
+  display: flex;
+  flex-direction: none;
+  align-items: none;
+  justify-content: space-evenly;
+}
+header.menu div.buscador input.buscar {
+  padding: 0px;
+  margin: 5px;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+header.menu div.buscador img {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+div.buscador {
+  width: 100%;
+}
+div.buscador li {
+  list-style: none;
+}
+div.buscador li div {
+  display: inline-block;
+  position: relative;
+}
+div.buscador li div div.formulario {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  left: -235px;
+}
+div.buscador li div:hover div.formulario {
+  display: block;
+  z-index: 1;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #d1c2a1;
+  border: 2px solid black;
+}
+div.buscador li div:hover div.formulario form.contenido {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: black;
+}
+div.buscador li div:hover div.formulario form.contenido div.linea {
+  border-top: 2px solid black;
+}
+div.buscador li div:hover div.formulario form.contenido :nth-child(1) {
+  margin: 0px;
+}
+div.buscador li div:hover div.formulario form.contenido :nth-child(3) {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+div.buscador li div:hover div.formulario form.contenido :nth-child(6) {
+  margin-bottom: 0px;
+}
+div.buscador li div:hover div.formulario form.contenido a {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  text-decoration: none;
+}
+div.buscador li div div.contenido1 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: black;
+}
 
 /*# sourceMappingURL=styles.css.map */
