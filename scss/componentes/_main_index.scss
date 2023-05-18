@@ -1,0 +1,106 @@
+main.menu {
+    margin-top: $pixel100;
+
+    article.art1 {
+        @include Ubicacion2 (flex, center, space-around);
+        height: 320px;
+
+        div.gatito1{
+            @media (min-width: 867px) and (max-width: 945px) {
+                display: none;
+            }
+            @media (min-width: 810px) and (max-width: 867px){
+                display: none;
+            }
+            @media (min-width: 620px) and (max-width: 810px){
+                display: none;
+            }    
+            @media (min-width: 500px) and (max-width: 620px){
+                display: none;
+            }
+            @media (max-width: 500px){
+                display: none;
+            }
+        }
+
+        div.contenedorInicio {
+            display: flex;
+        }
+
+        section {
+            background-color: #a3734e;
+            padding: 30px;
+            @include Fonts (map-get($Fonts, candy), map-get($Fonts, large3));
+            border-radius: 30px 0px 0px 30px;
+            box-shadow: 0px 0px 10px 10px #6b492e;
+            border-top: 2px solid #29170a;
+            border-left: 2px solid #29170a;
+            border-bottom: 2px solid #29170a;
+            text-shadow: 1px 1px 1px rgb(41, 30, 20);
+            color: map-get($Colores, negro);
+
+            p {
+                padding: 10px;
+            }
+
+            @media (min-width: 500px) and (max-width: 620px){
+                font-size: map-get($Fonts, large2);
+            }
+            @media (max-width: 500px){
+                font-size: map-get($Fonts, large2);
+            }
+        }
+
+        aside {
+            background-color: #a3734e;
+            border-radius: 0px 30px 30px 0px;
+            box-shadow: 15px 0px 20px 10px #6b492e;
+            border-top: 2px solid #29170a;
+            border-right: 2px solid #29170a;
+            border-bottom: 2px solid #29170a;
+
+            @media (min-width: 500px) and (max-width: 620px){
+                display: flex;
+                align-items: center;
+            }
+            @media (max-width: 500px){
+                display: flex;
+                align-items: center;
+            }
+        
+        }
+
+        img {
+            @include Imagenes (320px, 320px);
+
+            @media (min-width: 500px) and (max-width: 620px){
+                @include Imagenes (220px, 220px);
+            }
+            @media (max-width: 500px){
+                @include Imagenes (160px,160px);
+            }
+        }
+    }
+    
+    /*conoce es el ultimo articulo del index, es un link a productos*/
+
+    article.art2 div.conoce {
+        margin-top: 100px;
+        background-color: #a3734e;
+        border-radius: 20px;
+        padding: 0px 30px 0px 30px;
+
+        @media (min-width: 500px) and (max-width: 620px){
+            font-size: x-large;      
+        }
+        @media (max-width: 500px){
+            font-size: large;  
+            padding-bottom: 0px;
+        }
+
+        a {
+            color: map-get($Colores , negro )
+         }
+
+    }
+}

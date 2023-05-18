@@ -1,0 +1,82 @@
+div.buscador {
+    width: 100%;
+    li {
+        list-style: none;
+        div {
+            @include Positions (inline-block, relative);
+
+            div.formulario {
+                @include Positions (none, absolute);
+                padding: 10px;
+                left: -235px;
+                @media (min-width: 867px) and (max-width: 945px) {
+                    left: -285px;
+                }
+                @media (min-width: 810px) and (max-width: 867px){
+                    left: -285px;
+                }
+                @media (min-width: 620px) and (max-width: 810px){
+                    left: -285px;
+                }        
+                @media (min-width: 500px) and (max-width: 620px){
+                    left: -285px;
+                }
+                @media (max-width: 500px){
+                    left: -285px;
+                }
+    
+            }
+
+            &:hover div.formulario {
+                @include Ubicacion3 (block, column);
+                z-index: 1;
+                background: map-get($Colores, casiBeige);
+                @include ModificarContenedor2 (20px, 2px solid map-get($Colores, negro));
+
+                form.contenido {
+                    @include Imagenes ($pixel100*3, 350px); 
+                    @include Ubicacion3 (flex, column);
+                    font-family: map-get($Fonts, serif);
+                    font-weight: bold;
+                    color: map-get($Colores, negro); 
+                    
+
+                    div.linea {
+                        border-top: 2px solid map-get($Colores, negro);
+                    }
+
+                    :nth-child(1) {
+                        margin: 0px;
+                    }
+
+                    :nth-child(3){
+                        margin-top: 30px;
+                        margin-bottom: 0px;
+                    }
+
+                    :nth-child(6){
+                        margin-bottom: 0px;
+                    }
+
+                    a{
+                        @include Ubicacion4 (flex, flex-end);
+                        color: map-get($Colores, negro);
+                        text-decoration: none;
+                    }
+                    
+                }
+            
+            }
+
+            div.contenido1 {
+                @include Imagenes ($pixel100*3, $pixel100*3); 
+                @include Ubicacion (flex, column, none, center);
+                font-family: map-get($Fonts, serif);
+                font-weight: bold;
+                color: map-get($Colores, negro);
+            }
+
+        }
+
+    }
+}

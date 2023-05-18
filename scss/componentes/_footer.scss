@@ -1,0 +1,166 @@
+footer {
+    @media (min-width: 810px) and (max-width: 867px){
+        @include Grids (grid, $grid-fr $grid-fr $grid-fr, $grid-fr $grid-fr);
+        grid-gap: 50px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: 620px) and (max-width: 810px){
+        @include Grids (grid, $grid-fr $grid-fr, $grid-fr $grid-fr);
+        grid-gap: 50px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: 500px) and (max-width: 620px){
+        @include Grids (grid, $grid-fr $grid-fr, $grid-fr $grid-fr);
+        grid-gap: 50px;
+        padding-bottom: 30px;
+        justify-items: center;           
+    }
+    @media (max-width: 500px){
+        display: grid;
+        grid-template-rows: 1fr 150px 200px;
+        padding-bottom: 30px;
+        justify-content: center;        
+    }
+
+    margin-top: 100px;
+    @include Ubicacion2(flex, center, space-between);
+    background-color: map-get($Colores, foot);
+    @include Fonts (map-get($Fonts, serif), map-get($Fonts, large));
+    font-weight: bold;
+    border-top: 3px solid rgb(0, 0, 0);
+
+    img {
+        @include Imagenes ($pixel100*3, $pixel100*3);
+        @media (min-width: 810px) and (max-width: 867px){
+            @include GridsUbi (1, span 2);
+            @include Imagenes (250px, 250px);
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            @include GridsUbi (1, span 2);
+            @include Imagenes (250px, 250px);
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            @include GridsUbi (1, span 2);
+            @include Imagenes (250px, 250px);
+        }
+        @media (max-width: 500px){
+            grid-row: 1;
+            @include Imagenes (250px, 250px);
+        }
+    }
+
+    div {
+        color: black;
+    }
+
+    div.metodoDePago {
+        @include Ubicacion (flex, column, center, none);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 867px) and (max-width: 945px) {
+            @include Ubicacion (flex, column, center, none);
+        }
+        @media (min-width: 810px) and (max-width: 867px){
+            @include GridsUbi (2, 1);
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            @include GridsUbi (2, 1);
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            @include GridsUbi (2, 1);     
+        }
+        @media (max-width: 500px){
+            grid-row: 2;  
+        }
+
+        div {
+            @media (min-width: 810px) and (max-width: 867px){
+                display: flex;
+            }
+            @media (min-width: 620px) and (max-width: 810px){
+                display: flex;
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                display: flex;
+            }
+            @media (max-width: 500px){
+                display: flex;
+            }
+        }
+
+
+    }
+
+    div.contactanos {
+        @include Ubicacion (flex, column, center, none);
+
+        @media (min-width: 867px) and (max-width: 945px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        @media (min-width: 810px) and (max-width: 867px){
+            @include GridsUbi (2, 2); 
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            @include GridsUbi (2, 2); 
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            @include GridsUbi (2, 2);        
+        }
+        @media (max-width: 500px){
+            grid-row: 3;
+        }
+
+        div {
+            @media (min-width: 867px) and (max-width: 945px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (min-width: 810px) and (max-width: 867px){
+                display: grid;
+            }
+            @media (min-width: 620px) and (max-width: 810px){
+                display: flex;
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                display: flex;       
+            }
+            @media (max-width: 500px){
+                display: flex;         
+            }
+        }
+
+    }
+
+    img.logo1 {
+        @include Imagenes(50px, 50px);
+    }
+
+    img.logo2 {
+        @include Imagenes(150px, 60px);
+    }
+
+    div.mapa {
+        @media (min-width: 810px) and (max-width: 867px){
+            @include GridsUbi (3, 2);
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            display: none;
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            display: none;
+        }
+        @media (max-width: 500px){
+            display: none; 
+        }
+
+        iframe {
+            @media (min-width: 810px) and (max-width: 867px){
+                @include Imagenes(250px, 300px);
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+header.menu nav ul {
+    li {
+
+        &:hover ul {
+            display: block;
+            width: 100%;
+            border: 1px solid map-get($Colores, negro);
+            background-color: map-get($Colores, marron2);
+
+            li a{
+                display: block;
+                color: map-get($Colores, blanco);
+                font-size: map-get($Fonts, large);
+                font-family: map-get($Fonts, lobster);
+
+                &:hover {
+                    background: map-get($Colores, marron3);
+                    color: map-get($Colores, blanco);
+                    width: 107px;
+                }
+            }
+            
+        }
+
+    }
+
+    ul {
+        @include Positions (none, absolute); 
+    }
+    
+
+}

@@ -1,0 +1,28 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster+Two&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster+Two&family=Playfair+Display&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+//Base
+@import './base/maps.scss';
+@import './base/_operadores.scss';
+@import './base/_mixin.scss';
+@import './base/_extend.scss';
+@import './base/vars';
+
+
+//componentes
+@import './componentes/_body.scss';
+@import './componentes/_header.scss';
+@import './componentes/header_menu_de_usuario';
+@import './componentes/pages/header_productos';
+@import './componentes/_main_index.scss';
+@import './componentes/carrousel';
+@import './componentes/_footer.scss';
+@import './componentes/pages/header_noMain';
+@import './componentes/pages/_main_productos_1raParte';
+@import './componentes/pages/_main_productos_2daParte';
+@import './componentes/pages/main_ofertas';
+@import './componentes/pages/main_recetas';
+@import './componentes/pages/main_nosotros';

@@ -739,18 +739,12 @@ main.recetas div.contenidoRecetas div.pasoRecetas {
     border-radius: 25px;
     display: flex;
     border: 3px solid rgb(255, 255, 255);
-    justify-content: center;
-    
-}
-
-main.recetas div.contenidoRecetas div.pasoRecetas {
     padding-right: 40px;
     padding-top: 10px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
     justify-content: flex-start;
+    
 }
 
 main.recetas div.contenidoRecetas div.pasoRecetas p{
@@ -912,20 +906,17 @@ main.nosotros div.textarea {
 
     header.menu nav ul {
         align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     header.menu div {
-        justify-content: space-around
+        justify-content: space-aroundz
     }
     
     header.menu nav ul li.Desktop {
         display: none;
-    }
-
-    header.menu nav ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
     }
 
     header.menu nav ul li.productosResponsive {
@@ -1166,7 +1157,7 @@ main.nosotros div.textarea {
         grid-template-rows: 1fr 1fr;
         grid-gap: 50px;
         padding-bottom: 30px;
-        justify-items: center
+        justify-items: center;
     }
 
     footer img {

@@ -1,0 +1,64 @@
+@mixin Ubicacion ($display, $direction, $aling, $content){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $aling;
+    justify-content: $content;
+}
+
+@mixin Ubicacion2 ($display, $aling, $content) {
+    display: $display;
+    align-items: $aling;
+    justify-content: $content;
+}
+
+@mixin Ubicacion3 ($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+}
+
+@mixin Ubicacion4 ($display, $content) {
+    display: $display;
+    justify-content: $content;
+}
+
+@mixin Ubicacion5 ($aling, $content){
+    align-items: $aling;
+    justify-content: $content;
+}
+
+@mixin ModificarContenedor($padding, $margin, $border){
+    padding: $padding;
+    margin: $margin;
+    border: $border;
+}
+
+@mixin ModificarContenedor2 ($borderRadius, $border) {
+    border-radius: $borderRadius;
+    border: $border;
+}
+
+@mixin Grids ($display, $gridColumn, $gridRow) {
+    display: $display;
+    grid-template-columns: $gridColumn;
+    grid-template-rows: $gridRow;
+}
+
+@mixin GridsUbi ($GC, $GR) {
+    grid-column: $GC;
+    grid-row: $GR;   
+}
+
+@mixin Imagenes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin Fonts ($fontFam, $fontSize) {
+    font-family: $fontFam;
+    font-size: $fontSize;
+}
+
+@mixin Positions ($display, $pos){
+    display: $display;
+    position: $pos;
+}

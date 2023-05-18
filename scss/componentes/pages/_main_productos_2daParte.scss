@@ -1,0 +1,130 @@
+main.productos{ 
+    div.titulos {
+        margin-top: 100px;
+        font-family: 'Lobster Two', cursive;
+        font-size: x-large;
+        background-color: beige;
+        padding: 0px 20px 0px 20px;
+        border-radius: 20px;
+    }
+
+    article.contenedor1 section  {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+
+        @media (min-width: 867px) and (max-width: 945px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            grid-template-columns: repeat(2, 1fr);        
+        }
+        @media (max-width: 500px){
+            grid-template-columns: repeat(2, 1fr);         
+        }
+
+        div {
+            padding: 15px;
+            margin: 20px 40px 20px 40px;
+            border-radius: 10px;
+            display: flex;
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(226, 217, 204));
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Lobster Two', cursive;
+            background-color: #a3734e;
+
+            @media (min-width: 620px) and (max-width: 810px){
+                margin: 10px;
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                margin: 10px;
+            }
+            @media (max-width: 500px){
+                margin: 10px;  
+            }
+
+            p.nombre {
+                font-size: xx-large;
+                margin: 5px;
+            }
+
+            p.contenido {
+                font-size: large;
+            }
+
+            p.precio {
+                font-size: x-large;
+                margin: 5px;
+            }
+
+            button {
+                width: 200px;
+                height: 45px;
+                background-color:#ceac92;
+                border: 0px;
+                border-radius: 15px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .animated {
+                transition: all 1s;
+                border: 10px solid beige;
+                border-radius: 10px;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            img {
+                height: 300px;
+                width: 300px;
+
+
+                @media (min-width: 620px) and (max-width: 810px){
+                    width: 200px;
+                    height: 200px;
+                }
+                @media (min-width: 500px) and (max-width: 620px){
+                    width: 200px;
+                    height: 200px; 
+                }
+                @media (max-width: 500px){
+                    width: 200px;
+                    height: 200px;    
+                }
+            }
+        }
+    }
+
+    div.conoce1 {
+        display: flex;
+        margin-top: 100px;
+        background-color: beige;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-family: 'Lobster Two', cursive;
+        width: 300px;
+        height: 100px;
+        border-radius: 30px;
+
+        a {
+            color: black;
+
+            p{
+                margin: 5px;
+            }
+        }
+    }
+}

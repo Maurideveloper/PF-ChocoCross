@@ -17,71 +17,91 @@
     </head>
     <body>
         <header class = "menu">
-
-            <div>
-                <a href="..\index.html" alt="Choco Cross Main" class="i1"><img src="..\images\ChocoCrossMain.png" alt=""></a>
+            <!-- Foto menu -->
+            <div class="fotoNav">
+              <a href="..\index.html" alt="Choco Cross Main" class="i1"><img src="..\images\ChocoCrossMain.png" alt="ChocoCross"></a>
             </div>
-
+                  
             <nav>
-
-                <ul>
-
-                    <li><a href=".\productos.html">Productos</a>
-                    <li><a href=".\ofertas.html">Ofertas</a></li>
-                    <li><a href=".\recetas.html">Recetas</a></li>
-                    <li><a href=".\nosotros.html">Nosotros</a></li>
-
-                </ul>
-
+              <ul>
+                <li class="productosResponsive"><a href="..\pages\productos.html">Productos</a></li>
+      
+                <li class="Desktop"><a href="..\pages\ofertas.html">Ofertas</a></li>
+      
+                <li class="Desktop"><a href="..\pages\recetas.html">Recetas</a></li>
+      
+                <li class="Desktop"><a href="..\pages\nosotros.html">Nosotros</a></li>
+      
+                <!-- Lista responsive, aparece al bajar los pixeles -->
+                <li class="listaResponsive"><img src="..\images\menu.png" alt="">
+                  <ul class="responsive">
+      
+                    <li class="linkResponsive" id="linkResponsiveMobile"><a href="..\pages\productos.html">Productos</a></li>
+      
+                    <li class="linkResponsive"><a href="..\pages\ofertas.html">Ofertas</a></li>
+      
+                    <li class="linkResponsive"><a href="..\pages\recetas.html">Recetas</a></li>
+      
+                    <li class="linkResponsive"><a href="..\pages\nosotros.html">Nosotros</a></li>
+      
+                  </ul>
+                </li>
+              </ul>
             </nav>
-
+      
             <div class = "buscador">
-
-                <input class="buscar" type="search" name="buscar" placeholder="buscar">
-                
-                <li>
-                  <div>
-                      <img src="..\images\anadir-al-carrito.png" alt="">
-                      <div class="formulario">
-                        <div class="contenido1">
-                          <p>No existen compras registradas por el cliente</p>
-                        </div>
+              <input class="buscar" type="search" name="buscar" placeholder="buscar">
+              
+              <!-- Buscador responsive, aparece cuando bajan los pixeles -->
+              <img class="buscarResponsive" src="../images/buscar.png" alt="Buscador">
+                      
+              <li>
+                <div>
+      
+                  <!-- Interfaces para los clientes -->
+                  <img src="..\images\anadir-al-carrito.png" alt="Carrito">
+                    
+                  <div class="formulario">
+                    <div class="contenido1">
+                      <p>No existen compras registradas por el cliente</p>
                     </div>
                   </div>
-                </li>
-                
-                    <li>
-                      <div>
-                        <img src="..\images\agregar-usuario.png" alt="Imagen de registro" id="registrarse-imagen">
-                        <div class="formulario">
-                          <form class="contenido">
-                            <p>Ingresa a tu cuenta</p>
-                            <div class="linea"></div>
-                            <p>Direccion de Email</p>
-                            <input type="email" id="email" name="email">
-                            <br>
-                            <p>Contraseña</p>
-                            <input type="password" id="password" name="password">
-                            <a href="">¿Has olvidado tu contraseña?</a>
-                            <br>
-                            <input type="submit" value="Iniciar sesion">
-                            <br>
-                            <input type="submit" value="Crear cuenta">
-                          </form>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                
+                </div>
+              </li>
+                      
+              <li>
+                <div>
+                  <!-- Interfaces para los clientes, inicio de usuario -->
+                  <img src="..\images\agregar-usuario.png" alt="Imagen de registro" id="registrarse-imagen">
+                  <div class="formulario">
+                    <form class="contenido">
+                      <p>Ingresa a tu cuenta</p>
+                      <div class="linea"></div>
+                      <p>Direccion de Email</p>
+                      <input type="email" id="email" name="email">
+                      <br>
+                      <p>Contraseña</p>
+                      <input type="password" id="password" name="password">
+                      <!-- Interfaces para los clientes, deberia llevar a una pagina de register-->
+                      <a href="">¿Has olvidado tu contraseña?</a>
+                      <br>
+                      <input type="submit" value="Iniciar sesion">
+                      <br>
+                      <input type="submit" value="Crear cuenta">
+                    </form>
+                  </div>
+                </div>
+               </li>
+                        
             </div>
-
-        </header>
+      
+          </header>
 
         <!-- Este header es para el minumenu que marca en que pagina estas -->
 
         <header class="nomain">
             <nav>
-                <a href="..\index.html"><img src="..\images\home.png" alt=""></a>
+                <a href="..\index.html"><img src="..\images\home.png" alt="home"></a>
                 <a href="..\index.html">Home</a>
                 <span> | </span>
                 <span class="secciones">Nosotros</span>
@@ -92,9 +112,16 @@
         <main class="nosotros">
 
             <div class="explicacion">
-                <p>Parrafo explicando como funciona NOSOTROS</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic molestias at omnis laboriosam soluta aliquid nihil ipsum architecto dolorum iusto accusamus nesciunt accusantium odit eligendi corrupti totam, veniam eum illo! <br> (falta decorarlo mejor)
-                </p>
+            <div>
+              <p>Escribinos tu pedido. Tu consulta no molesta!</p>
+            </div>
+            <div class="explicacionContenido">
+              <p>1_ Escribenos tu nombre y apellido</p>
+              <p>2_ Escribenos tu direccion de email</p>
+              <p>3_ Selecciona la opcion en la que desees consultarnos</p>
+              <p>4_ En caso de seleccionar otros, por favor, especifique el tema a comentar</p>
+              <p>5_ Comentanos tu consula! </p>
+            </div>
             </div>
 
             <div class="formulario">
@@ -142,8 +169,8 @@
                 <p>Metodos de pago:</p>
                 
                 <div>
-                    <img class="logo1" src="..\images\metodo-de-pago.png" alt="">
-                    <img class="logo2" src="..\images\version-horizontal-large-logo-mercado-pago.png" alt="">
+                    <img class="logo1" src="..\images\metodo-de-pago.png" alt="efectivo">
+                    <img class="logo2" src="..\images\version-horizontal-large-logo-mercado-pago.png" alt="mercadoPago">
                 </div>
             </div>
 
@@ -151,16 +178,17 @@
                 <p>Contactanos:</p>
                 <p>342-155031306</p>
                 <div>
-                    <img class="logo1" src="..\images\instagram.png" alt="">
-                    <img class="logo1" src="..\images\whatsapp.png" alt="">
-                    <img class="logo1" src="..\images\globos-de-texto.png" alt="">
-                    <img class="logo1" src="..\images\servicio-de-centro-de-llamadas.png" alt="">
+                    <img class="logo1" src="..\images\instagram.png" alt="instagram">
+                    <img class="logo1" src="..\images\whatsapp.png" alt="whatsapp">
+                    <img class="logo1" src="..\images\globos-de-texto.png" alt="mensaje">
+                    <img class="logo1" src="..\images\servicio-de-centro-de-llamadas.png" alt="llamada">
                 </div>
             </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1698.8008370168843!2d-60.71717434184002!3d-31.617372711249807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzAyLjYiUyA2MMKwNDInNTcuOSJX!5e0!3m2!1ses-419!2sar!4v1680023874759!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1698.8008370168843!2d-60.71717434184002!3d-31.617372711249807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzAyLjYiUyA2MMKwNDInNTcuOSJX!5e0!3m2!1ses-419!2sar!4v1680023874759!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </footer>
+
     </body>
 </html> 
 

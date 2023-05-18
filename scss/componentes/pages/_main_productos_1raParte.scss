@@ -1,0 +1,68 @@
+//codigo de la 1ra parte de productos, solamente hasta FILTRAR / ORDENAR dentro de la pagina
+
+main.productos {
+    margin-top: 100px;
+    @include Ubicacion (flex, column, center, center);
+
+    div.filtros  {
+        margin-top: 20px;
+        display: flex;
+        list-style: none;
+
+        li.elementosF {
+            background-color: antiquewhite;
+            font-family: map-get($Fonts, lobster);
+            font-size: large;
+            list-style: none;
+            display: flex;
+            padding-right: 60px;
+            padding-left: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            justify-content: center;
+
+            ul {
+                position: absolute;
+                display: none;
+            }
+
+            &:hover{
+                ul {
+                    display: block;
+                    list-style: none;
+                    margin-top: 23px;
+                    border: 1px solid black;
+                    padding: 0px;
+                    
+                    li {
+                        background-color: rgb(46, 31, 6);
+
+                        a{
+                            color: white;
+                            font-size: larger;
+                            font-family: 'Lobster Two', cursive;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        #elementosF1 {
+            border-radius: 10px 0px 0px 10px;
+            border: 1px solid black;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        #elementosF2{
+            border-radius: 0px 10px 10px 0px;
+            border-right: 2px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+    }
+}

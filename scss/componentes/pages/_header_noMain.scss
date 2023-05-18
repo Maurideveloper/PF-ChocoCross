@@ -1,0 +1,49 @@
+header.nomain {
+    @include Ubicacion4 (flex, center);
+    margin-top: 7px;
+    position: sticky;
+    top: 101px;
+    z-index: 998;
+
+    nav{
+        display: flex;
+        background-color: map-get($Colores, headNoMain);
+        color: map-get($Colores, blanco);
+        border-radius: 20px;
+        width: 80%;
+
+        @media (max-width: 500px){
+            justify-content: space-evenly;
+        }
+
+     
+        a {
+            color: map-get($Colores, blanco);
+            margin-right: 30px;
+            margin-left: 10px;
+            font-size: map-get($Fonts, large);
+            font-family: map-get($Fonts, lobster);
+
+            @media (max-width: 500px){
+                margin-left: 0px;
+                margin-right: 0px;            
+            }
+
+
+            img {
+                @include Imagenes($pixelImgIcon, 24);
+                margin-left: 100px;
+                @media (max-width: 500px){
+                    margin-left: 0px; 
+                }
+    
+            }
+        }
+
+        span.secciones {
+            margin-left: 30px;
+            font-size: map-get($Fonts, large);
+            font-family: map-get($Fonts, lobster);
+        }
+    }
+}

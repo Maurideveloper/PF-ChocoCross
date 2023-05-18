@@ -1,0 +1,246 @@
+header.menu {
+    @include ModificarContenedor2 (20px, 1px solid map-get($Colores, negro));
+    @include Grids (grid, 1fr 1fr 1fr, none);
+    padding: 1em;
+    background: map-get($Colores, marron1);
+    position: sticky;
+    top: 8px;
+    z-index: 999;
+    
+    @media (min-width: 500px) and (max-width: 620px){
+        @include Grids (grid, 1fr 1fr 1fr, none);
+    }
+    @media (max-width: 500px){
+        @include Grids (grid, 1fr 1fr 1fr, none);
+    }
+
+    div.fotoNav {
+        @media (min-width: 500px) and (max-width: 620px){
+            @include GridsUbi (2, 1);     
+        }
+        @media (max-width: 500px){
+            @include GridsUbi (2, 1); 
+        }
+    }
+
+     div {
+        @include Ubicacion2 (flex, center, none);
+
+        @media (min-width: 810px) and (max-width: 867px){
+            justify-content: space-around;
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            justify-content: space-around;
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            justify-content: space-around;
+        }
+        @media (max-width: 500px){
+            justify-content: space-around;
+        }
+        
+        img {
+            @include Imagenes (200px, 60px);
+        }
+
+    }
+
+    nav {
+        @include Ubicacion2 (flex, center, none);
+
+        @media (min-width: 500px) and (max-width: 620px){
+            grid-column: 1;       
+        }
+        @media (max-width: 500px){
+            grid-column: 1;
+        }
+        
+        ul {
+
+            list-style: none;
+            display: flex;
+            @include ModificarContenedor (0px, 0px, none);
+
+            @media (min-width: 810px) and (max-width: 867px){
+                @include Ubicacion5 (center, space-evenly);
+                width: 100%;
+            }
+            @media (min-width: 620px) and (max-width: 810px){
+                @include Ubicacion5 (center, space-evenly);
+                width: 100%;
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                @include Ubicacion5 (center, space-evenly);
+                width: 100%;
+            }
+            @media (max-width: 500px){
+                @include Ubicacion5 (center, space-evenly);
+                width: 100%;
+                
+            }
+
+            li.productosResponsive {
+                @media (min-width: 500px) and (max-width: 620px){
+                    display: none;
+                }
+                @media (max-width: 500px){
+                    display: none;  
+                }
+            }
+
+            li {
+                @include Positions (inline-block, relative);
+                a{
+                    color: map-get($Colores, blanco);
+                    text-decoration: none;
+                    padding: .2em 1em;
+                    @include Fonts (map-get($Fonts, lobster),map-get($Fonts, large));
+                }
+
+                img {
+                    display: none;
+                    @include Imagenes ($pixelImgIcon, $pixelImgIcon); 
+
+                    @media (min-width: 810px) and (max-width: 867px){
+                        display: block;
+                    }
+                    @media (min-width: 620px) and (max-width: 810px){
+                        display: block;
+                    }
+                    @media (min-width: 500px) and (max-width: 620px){
+                        display: block;
+                    }
+                    @media (max-width: 500px){
+                        display: block;
+                    }
+        
+                }
+            }
+
+            li.listaResponsive {
+                ul.responsive{
+                    width: 0px;
+
+                    @media (min-width: 500px) and (max-width: 620px){
+                        left: 40px;
+                    }
+                    @media (max-width: 500px){
+                        left: 40px;
+                    }
+
+                    li.linkResponsive {
+                        border: 1px solid black;
+                        background-color: rgb(46, 31, 6);
+                        width: 110px;
+                        left: -85px;
+
+                        @media (min-width: 810px) and (max-width: 867px){
+                            display: block;
+                        }
+                        @media (min-width: 620px) and (max-width: 810px){
+                            display: block;
+                        }
+                        @media (min-width: 500px) and (max-width: 620px){
+                            display: block;
+                        }
+                        @media (max-width: 500px){
+                            display: block;
+                        }
+                
+                    }
+
+                    #linkResponsiveMobile {
+                        @media (min-width: 810px) and (max-width: 867px){
+                            display: none;
+                        }
+                        @media (min-width: 620px) and (max-width: 810px){
+                            display: none;
+                        }
+                        @media (min-width: 500px) and (max-width: 620px){
+                            display: block;
+                        }
+                        @media (max-width: 500px){
+                            display: block;
+                        }
+                    }
+                    
+                }
+            }
+
+            li.Desktop {
+                @media (min-width: 810px) and (max-width: 867px){
+                    display: none;
+                }
+                @media (min-width: 620px) and (max-width: 810px){
+                    display: none;
+                }
+                @media (min-width: 500px) and (max-width: 620px){
+                    display: none;   
+                }
+                @media (max-width: 500px){
+                    display: none;   
+                }
+            }
+
+            li.productosResponsive {
+                @media (min-width: 810px) and (max-width: 867px){
+                    border-right: 2px solid map-get($Colores, negro);
+                    border-right: 2px solid map-get($Colores, negro);
+                }
+                @media (min-width: 620px) and (max-width: 810px){
+                    border-right: 2px solid map-get($Colores, negro);
+                    border-right: 2px solid map-get($Colores, negro);
+                }
+                @media (min-width: 500px) and (max-width: 620px){
+                    border-right: 2px solid map-get($Colores, negro);
+                    border-right: 2px solid map-get($Colores, negro);
+                }
+                @media (max-width: 500px){
+                    border-right: 2px solid map-get($Colores, negro);
+                    border-right: 2px solid map-get($Colores, negro);         
+                }
+            }
+        }
+    }
+
+    div.buscador {
+        @include Ubicacion4 (flex, space-evenly);
+
+        @media (min-width: 500px) and (max-width: 620px){
+            grid-column: 3;   
+            flex-direction: row-reverse;
+        }
+        @media (max-width: 500px){
+            grid-column: 3;  
+            flex-direction: row-reverse;
+        }
+        
+        input.buscar {
+            @include ModificarContenedor (0px, 5px, none);
+            @include Fonts (map-get($Fonts, sans), 14px);
+            line-height: 1.2;
+
+            @media (min-width: 500px) and (max-width: 620px){
+                display: none;  
+            }
+            @media (max-width: 500px){
+                display: none;   
+            }
+        }
+
+        img {
+            @include Imagenes ($pixelImgIcon, $pixelImgIcon);
+        }
+
+        img.buscarResponsive {
+            display: none;
+            @media (min-width: 500px) and (max-width: 620px){
+                display: block;
+            }
+            @media (max-width: 500px){
+                display: block; 
+            }
+        }
+    }
+
+}

@@ -1,0 +1,167 @@
+main.ofertas {
+    display: flex;
+    flex-direction: column;
+
+    div.tituloOfertas {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+
+        img {
+            @include Imagenes($pixel100, $pixel100);
+
+            @media (min-width: 810px) and (max-width: 867px){
+                @include Imagenes(80px, 80px);
+            }
+	        @media (min-width: 620px) and (max-width: 810px){
+                @include Imagenes(60px , 60px);    
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                @include Imagenes(60px , 60px);          
+            }
+            @media (max-width: 500px){
+                @include Imagenes(60px , 60px);             
+            }
+        }
+
+        p {
+            font-family: 'Rubik Moonrocks', cursive;
+            font-size: 150px;
+            color: #29170a;
+            background-color: rgba(233, 215, 159, 0.3);
+
+            @media (min-width: 867px) and (max-width: 945px) {
+                font-size: 125px;
+            }
+            @media (min-width: 810px) and (max-width: 867px){
+                font-size: 125px;
+            }
+	        @media (min-width: 620px) and (max-width: 810px){
+                font-size: 100px;
+            }
+            @media (min-width: 500px) and (max-width: 620px){
+                font-size: 80px; 
+            }
+            @media (max-width: 500px){
+                font-size: 60px;
+            }
+
+        }
+    }
+
+    div.contenedorTotal {
+        @include Ubicacion4 (flex, space-evenly);
+
+        @media (min-width: 867px) and (max-width: 945px) {
+            flex-direction: column;
+        }
+        @media (min-width: 810px) and (max-width: 867px){
+            flex-direction: column;
+        }
+        @media (min-width: 620px) and (max-width: 810px){
+            flex-direction: column;
+        }
+        @media (min-width: 500px) and (max-width: 620px){
+            flex-direction: column;
+        }
+        @media (max-width: 500px){
+            flex-direction: column;
+        }
+
+
+        article section {
+            @include Ubicacion4 (flex, space-evenly);
+            margin-top: 50px;
+            background: wheat;
+            @include Imagenes(500px, 400px);
+            border-radius: 60px;   
+
+            @media (min-width: 500px) and (max-width: 620px){
+                @include Imagenes(400px, 300px);
+            }
+            @media (max-width: 500px){
+                @include Imagenes(320px, 220px);
+            }
+
+            div{
+                @include Ubicacion3 (flex, column);
+            }
+
+        }
+
+        article.contenedorinterno1 {
+            font-family: map-get($Fonts, lobster);
+
+            .imagenOfertas1 {
+                @include Imagenes(200px, 200px);
+                border-radius: 50px 0px 0px 0px;
+
+                @media (min-width: 500px) and (max-width: 620px){
+                    @include Imagenes(150px, 150px);
+                }
+                @media (max-width: 500px){
+                    @include Imagenes(150px, 150px);
+                }
+            }
+
+            .imagenOfertas2 {
+                @include Imagenes(200px, 200px);
+                border-radius: 0px 0px 0px 50px;
+
+                @media (min-width: 500px) and (max-width: 620px){
+                    @include Imagenes(150px, 150px);
+                }
+                @media (max-width: 500px){
+                    @include Imagenes(150px, 150px);
+                }
+            }
+        }
+
+        article.contenedorinterno2 {
+            @include Ubicacion (flex, column, center, center);
+            font-family: map-get($Fonts, lobster);
+
+            .imagenOfertas1 {
+                @include Imagenes(200px, 200px);
+                border-radius: 50px 0px 0px 0px;
+
+                @media (min-width: 500px) and (max-width: 620px){
+                    @include Imagenes(150px, 150px);
+                }
+                @media (max-width: 500px){
+                    @include Imagenes(150px, 150px);
+                }
+            }
+
+            .imagenOfertas2 {
+                @include Imagenes(200px, 200px);
+                border-radius: 0px 0px 0px 50px;
+
+                @media (min-width: 500px) and (max-width: 620px){
+                    @include Imagenes(150px, 150px);
+                }
+                @media (max-width: 500px){
+                    @include Imagenes(150px, 150px);
+                }
+            }
+        }
+    }
+    
+    div {
+        @include Ubicacion2 (flex, center, center);
+    }
+
+    div.conoce {
+        @include Ubicacion2 (flex, center, center);
+        margin-top: 100px;
+        background-color: beige;
+        font-size: map-get($Fonts, large3);
+        font-family: map-get($Fonts, lobster);
+        @include Imagenes(500px, 100px);
+        border-radius: 30px;
+
+        a {
+            color: black;
+        }
+    }
+}
