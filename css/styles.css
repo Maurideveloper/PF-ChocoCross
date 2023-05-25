@@ -1167,7 +1167,7 @@ main.nosotros div.explicacion {
 }
 @media (max-width: 500px) {
   main.nosotros div.explicacion {
-    width: 350px;
+    width: 90%;
   }
 }
 main.nosotros div.explicacion .explicacionContenido {
@@ -1199,6 +1199,11 @@ main.nosotros div.nombreYapellido div {
 main.nosotros div.nombreYapellido input {
   width: 400px;
 }
+@media (max-width: 500px) {
+  main.nosotros div.nombreYapellido input {
+    width: 90%;
+  }
+}
 main.nosotros div.email {
   margin-top: 40px;
 }
@@ -1217,7 +1222,7 @@ main.nosotros div.email input {
 }
 @media (max-width: 500px) {
   main.nosotros div.email input {
-    width: 400px;
+    width: 90%;
   }
 }
 main.nosotros div.opciones {
@@ -1228,12 +1233,12 @@ main.nosotros div.opciones {
 }
 @media (min-width: 500px) and (max-width: 620px) {
   main.nosotros div.opciones {
-    width: 500px;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
   main.nosotros div.opciones {
-    width: 350px;
+    width: 90%;
   }
 }
 main.nosotros div.opciones div {
@@ -1253,12 +1258,12 @@ main.nosotros div.textarea {
 }
 @media (max-width: 620px) {
   main.nosotros div.textarea {
-    width: 400px;
+    width: 90%;
   }
 }
 @media (max-width: 620px) {
   main.nosotros div.textarea textarea {
-    width: 400px;
+    width: 100%;
   }
 }
 
