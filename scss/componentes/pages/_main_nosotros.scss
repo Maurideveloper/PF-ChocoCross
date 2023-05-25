@@ -1,5 +1,6 @@
 main.nosotros {
     @include Ubicacion (flex, column, center, none);
+    width: 100%;
 
     div.explicacion {
         @include Ubicacion (flex, column, center, center);
@@ -32,34 +33,17 @@ main.nosotros {
     div.nombreYapellido {
         display: flex;
 
-        @media (min-width: 810px) and (max-width: 867px){
+        @media (max-width: 867px){
             flex-direction: column;
         }
-        @media (min-width: 620px) and (max-width: 810px){
-            flex-direction: column;
-        }
-        @media (min-width: 500px) and (max-width: 620px){
-            flex-direction: column;
-        }
-        @media (max-width: 500px){
-            flex-direction: column;
-        }
+        
 
 
         div {
             margin: 0px 10px 0px 10px;
 
-            @media (min-width: 810px) and (max-width: 867px){
+            @media (max-width: 867px){
                 margin: 0px 00px 15px 0px;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
-                margin: 0px 00px 15px 0px;
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                margin: 0px 00px 15px 0px;   
-            }
-            @media (max-width: 500px){
-                margin: 0px 00px 15px 0px;   
             }
         }
 
@@ -75,10 +59,7 @@ main.nosotros {
         input {
             width: 828px;
 
-            @media (min-width: 810px) and (max-width: 867px){
-                width: 600px;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
+            @media (min-width: 620px) and (max-width: 867px){
                 width: 600px;
             }
             @media (min-width: 500px) and (max-width: 620px){
@@ -117,20 +98,15 @@ main.nosotros {
     div.textarea {
         margin-top: 50px;
 
-        @media (min-width: 500px) and (max-width: 620px){
-            width: 400px;
-        }
-        @media (max-width: 500px){
+        @media (max-width: 620px){
             width: 400px;
         }
 
         textarea{
-            @media (min-width: 500px) and (max-width: 620px){
+            @media (max-width: 620px){
                 width: 400px;
             }
-            @media (max-width: 500px){
-                width: 400px;
-            }
+            
         }
     }
 }

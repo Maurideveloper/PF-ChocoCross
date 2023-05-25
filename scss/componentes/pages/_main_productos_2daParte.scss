@@ -16,20 +16,15 @@ main.productos{
         align-items: center;
         border-radius: 30px;
 
-        @media (min-width: 867px) and (max-width: 945px) {
+        @media (max-width: 945px) {
             grid-template-columns: repeat(2, 1fr);
         }
-        @media (min-width: 620px) and (max-width: 810px){
-            grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
         }
-        @media (min-width: 500px) and (max-width: 620px){
-            grid-template-columns: repeat(2, 1fr);        
-        }
-        @media (max-width: 500px){
-            grid-template-columns: repeat(2, 1fr);         
-        }
+        
 
-        div {
+        div.card {
             padding: 15px;
             margin: 20px 40px 20px 40px;
             border-radius: 10px;
@@ -40,19 +35,18 @@ main.productos{
             font-family: 'Lobster Two', cursive;
             background-color: #a3734e;
 
-            @media (min-width: 620px) and (max-width: 810px){
+            @media (max-width: 810px){
                 margin: 10px;
             }
-            @media (min-width: 500px) and (max-width: 620px){
-                margin: 10px;
-            }
-            @media (max-width: 500px){
-                margin: 10px;  
-            }
+            
 
             p.nombre {
                 font-size: xx-large;
                 margin: 5px;
+                @media (max-width: 810px){
+                    font-size: x-large;
+                    font-weight: bold;
+                }
             }
 
             p.contenido {
@@ -88,20 +82,12 @@ main.productos{
 
             img {
                 height: 300px;
-                width: 300px;
+                width: 100%;
 
 
-                @media (min-width: 620px) and (max-width: 810px){
+                @media (max-width: 810px){
                     width: 200px;
                     height: 200px;
-                }
-                @media (min-width: 500px) and (max-width: 620px){
-                    width: 200px;
-                    height: 200px; 
-                }
-                @media (max-width: 500px){
-                    width: 200px;
-                    height: 200px;    
                 }
             }
         }

@@ -6,19 +6,7 @@ main.menu {
         height: 320px;
 
         div.gatito1{
-            @media (min-width: 867px) and (max-width: 945px) {
-                display: none;
-            }
-            @media (min-width: 810px) and (max-width: 867px){
-                display: none;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
-                display: none;
-            }    
-            @media (min-width: 500px) and (max-width: 620px){
-                display: none;
-            }
-            @media (max-width: 500px){
+            @media (max-width: 945px) {
                 display: none;
             }
         }
@@ -43,10 +31,7 @@ main.menu {
                 padding: 10px;
             }
 
-            @media (min-width: 500px) and (max-width: 620px){
-                font-size: map-get($Fonts, large2);
-            }
-            @media (max-width: 500px){
+            @media (max-width: 620px){
                 font-size: map-get($Fonts, large2);
             }
         }
@@ -59,11 +44,7 @@ main.menu {
             border-right: 2px solid #29170a;
             border-bottom: 2px solid #29170a;
 
-            @media (min-width: 500px) and (max-width: 620px){
-                display: flex;
-                align-items: center;
-            }
-            @media (max-width: 500px){
+            @media (max-width: 620px){
                 display: flex;
                 align-items: center;
             }
@@ -90,11 +71,10 @@ main.menu {
         border-radius: 20px;
         padding: 0px 30px 0px 30px;
 
-        @media (min-width: 500px) and (max-width: 620px){
+        @media (max-width: 620px){
             font-size: x-large;      
         }
         @media (max-width: 500px){
-            font-size: large;  
             padding-bottom: 0px;
         }
 

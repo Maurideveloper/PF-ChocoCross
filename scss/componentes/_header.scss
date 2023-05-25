@@ -6,38 +6,26 @@ header.menu {
     position: sticky;
     top: 8px;
     z-index: 999;
+    width: 100%;
     
-    @media (min-width: 500px) and (max-width: 620px){
-        @include Grids (grid, 1fr 1fr 1fr, none);
-    }
-    @media (max-width: 500px){
+    @media (max-width: 620px){
         @include Grids (grid, 1fr 1fr 1fr, none);
     }
 
     div.fotoNav {
-        @media (min-width: 500px) and (max-width: 620px){
+        @media (max-width: 620px){
             @include GridsUbi (2, 1);     
         }
-        @media (max-width: 500px){
-            @include GridsUbi (2, 1); 
-        }
+        
     }
 
      div {
         @include Ubicacion2 (flex, center, none);
 
-        @media (min-width: 810px) and (max-width: 867px){
+        @media (max-width: 867px){
             justify-content: space-around;
         }
-        @media (min-width: 620px) and (max-width: 810px){
-            justify-content: space-around;
-        }
-        @media (min-width: 500px) and (max-width: 620px){
-            justify-content: space-around;
-        }
-        @media (max-width: 500px){
-            justify-content: space-around;
-        }
+        
         
         img {
             @include Imagenes (200px, 60px);
@@ -48,11 +36,8 @@ header.menu {
     nav {
         @include Ubicacion2 (flex, center, none);
 
-        @media (min-width: 500px) and (max-width: 620px){
+        @media (max-width: 620px){
             grid-column: 1;       
-        }
-        @media (max-width: 500px){
-            grid-column: 1;
         }
         
         ul {
@@ -61,35 +46,24 @@ header.menu {
             display: flex;
             @include ModificarContenedor (0px, 0px, none);
 
-            @media (min-width: 810px) and (max-width: 867px){
+            @media (max-width: 867px){
                 @include Ubicacion5 (center, space-evenly);
                 width: 100%;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
-                @include Ubicacion5 (center, space-evenly);
-                width: 100%;
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                @include Ubicacion5 (center, space-evenly);
-                width: 100%;
-            }
-            @media (max-width: 500px){
-                @include Ubicacion5 (center, space-evenly);
-                width: 100%;
-                
             }
 
             li.productosResponsive {
-                @media (min-width: 500px) and (max-width: 620px){
+                @media (max-width: 620px){
                     display: none;
-                }
-                @media (max-width: 500px){
-                    display: none;  
                 }
             }
 
             li {
                 @include Positions (inline-block, relative);
+                
+                &:hover {
+                    background: map-get($Colores, marron3);
+                }
+                
                 a{
                     color: map-get($Colores, blanco);
                     text-decoration: none;
@@ -101,16 +75,7 @@ header.menu {
                     display: none;
                     @include Imagenes ($pixelImgIcon, $pixelImgIcon); 
 
-                    @media (min-width: 810px) and (max-width: 867px){
-                        display: block;
-                    }
-                    @media (min-width: 620px) and (max-width: 810px){
-                        display: block;
-                    }
-                    @media (min-width: 500px) and (max-width: 620px){
-                        display: block;
-                    }
-                    @media (max-width: 500px){
+                    @media (max-width: 867px){
                         display: block;
                     }
         
@@ -121,10 +86,7 @@ header.menu {
                 ul.responsive{
                     width: 0px;
 
-                    @media (min-width: 500px) and (max-width: 620px){
-                        left: 40px;
-                    }
-                    @media (max-width: 500px){
+                    @media (max-width: 620px){
                         left: 40px;
                     }
 
@@ -134,32 +96,17 @@ header.menu {
                         width: 110px;
                         left: -85px;
 
-                        @media (min-width: 810px) and (max-width: 867px){
-                            display: block;
-                        }
-                        @media (min-width: 620px) and (max-width: 810px){
-                            display: block;
-                        }
-                        @media (min-width: 500px) and (max-width: 620px){
-                            display: block;
-                        }
-                        @media (max-width: 500px){
+                        @media (max-width: 867px){
                             display: block;
                         }
                 
                     }
 
                     #linkResponsiveMobile {
-                        @media (min-width: 810px) and (max-width: 867px){
+                        @media (min-width: 620px) and (max-width: 867px){
                             display: none;
                         }
-                        @media (min-width: 620px) and (max-width: 810px){
-                            display: none;
-                        }
-                        @media (min-width: 500px) and (max-width: 620px){
-                            display: block;
-                        }
-                        @media (max-width: 500px){
+                        @media (max-width: 620px){
                             display: block;
                         }
                     }
@@ -168,36 +115,15 @@ header.menu {
             }
 
             li.Desktop {
-                @media (min-width: 810px) and (max-width: 867px){
+                @media (max-width: 867px){
                     display: none;
-                }
-                @media (min-width: 620px) and (max-width: 810px){
-                    display: none;
-                }
-                @media (min-width: 500px) and (max-width: 620px){
-                    display: none;   
-                }
-                @media (max-width: 500px){
-                    display: none;   
                 }
             }
 
             li.productosResponsive {
-                @media (min-width: 810px) and (max-width: 867px){
+                @media (max-width: 867px){
                     border-right: 2px solid map-get($Colores, negro);
                     border-right: 2px solid map-get($Colores, negro);
-                }
-                @media (min-width: 620px) and (max-width: 810px){
-                    border-right: 2px solid map-get($Colores, negro);
-                    border-right: 2px solid map-get($Colores, negro);
-                }
-                @media (min-width: 500px) and (max-width: 620px){
-                    border-right: 2px solid map-get($Colores, negro);
-                    border-right: 2px solid map-get($Colores, negro);
-                }
-                @media (max-width: 500px){
-                    border-right: 2px solid map-get($Colores, negro);
-                    border-right: 2px solid map-get($Colores, negro);         
                 }
             }
         }
@@ -206,12 +132,8 @@ header.menu {
     div.buscador {
         @include Ubicacion4 (flex, space-evenly);
 
-        @media (min-width: 500px) and (max-width: 620px){
+        @media (max-width: 620px){
             grid-column: 3;   
-            flex-direction: row-reverse;
-        }
-        @media (max-width: 500px){
-            grid-column: 3;  
             flex-direction: row-reverse;
         }
         
@@ -220,12 +142,10 @@ header.menu {
             @include Fonts (map-get($Fonts, sans), 14px);
             line-height: 1.2;
 
-            @media (min-width: 500px) and (max-width: 620px){
+            @media (max-width: 620px){
                 display: none;  
             }
-            @media (max-width: 500px){
-                display: none;   
-            }
+
         }
 
         img {
@@ -234,11 +154,8 @@ header.menu {
 
         img.buscarResponsive {
             display: none;
-            @media (min-width: 500px) and (max-width: 620px){
+            @media (max-width: 620px){
                 display: block;
-            }
-            @media (max-width: 500px){
-                display: block; 
             }
         }
     }

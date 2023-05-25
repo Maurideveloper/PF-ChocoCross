@@ -1,25 +1,22 @@
 footer {
-    @media (min-width: 810px) and (max-width: 867px){
+    width: 100%;
+    
+    @media (min-width: 500px) and (max-width: 867px){
         @include Grids (grid, $grid-fr $grid-fr $grid-fr, $grid-fr $grid-fr);
         grid-gap: 50px;
         padding-bottom: 30px;
     }
-    @media (min-width: 620px) and (max-width: 810px){
+    @media (min-width: 500px) and (max-width: 810px){
         @include Grids (grid, $grid-fr $grid-fr, $grid-fr $grid-fr);
-        grid-gap: 50px;
-        padding-bottom: 30px;
     }
-    @media (min-width: 500px) and (max-width: 620px){
-        @include Grids (grid, $grid-fr $grid-fr, $grid-fr $grid-fr);
-        grid-gap: 50px;
-        padding-bottom: 30px;
+    @media (max-width: 620px){
         justify-items: center;           
     }
     @media (max-width: 500px){
         display: grid;
         grid-template-rows: 1fr 150px 200px;
         padding-bottom: 30px;
-        justify-content: center;        
+        justify-content: center
     }
 
     margin-top: 100px;
@@ -31,21 +28,12 @@ footer {
 
     img {
         @include Imagenes ($pixel100*3, $pixel100*3);
-        @media (min-width: 810px) and (max-width: 867px){
-            @include GridsUbi (1, span 2);
-            @include Imagenes (250px, 250px);
-        }
-        @media (min-width: 620px) and (max-width: 810px){
-            @include GridsUbi (1, span 2);
-            @include Imagenes (250px, 250px);
-        }
-        @media (min-width: 500px) and (max-width: 620px){
+        @media (max-width: 867px){
             @include GridsUbi (1, span 2);
             @include Imagenes (250px, 250px);
         }
         @media (max-width: 500px){
             grid-row: 1;
-            @include Imagenes (250px, 250px);
         }
     }
 
@@ -62,30 +50,15 @@ footer {
         @media (min-width: 867px) and (max-width: 945px) {
             @include Ubicacion (flex, column, center, none);
         }
-        @media (min-width: 810px) and (max-width: 867px){
+        @media (min-width: 500px) and (max-width: 867px){
             @include GridsUbi (2, 1);
-        }
-        @media (min-width: 620px) and (max-width: 810px){
-            @include GridsUbi (2, 1);
-        }
-        @media (min-width: 500px) and (max-width: 620px){
-            @include GridsUbi (2, 1);     
         }
         @media (max-width: 500px){
             grid-row: 2;  
         }
 
         div {
-            @media (min-width: 810px) and (max-width: 867px){
-                display: flex;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
-                display: flex;
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                display: flex;
-            }
-            @media (max-width: 500px){
+            @media (max-width: 867px){
                 display: flex;
             }
         }
@@ -101,14 +74,8 @@ footer {
             grid-template-columns: 1fr;
             grid-gap: 10px;
         }
-        @media (min-width: 810px) and (max-width: 867px){
+        @media (min-width: 500px) and (max-width: 867px){
             @include GridsUbi (2, 2); 
-        }
-        @media (min-width: 620px) and (max-width: 810px){
-            @include GridsUbi (2, 2); 
-        }
-        @media (min-width: 500px) and (max-width: 620px){
-            @include GridsUbi (2, 2);        
         }
         @media (max-width: 500px){
             grid-row: 3;
@@ -119,17 +86,8 @@ footer {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }
-            @media (min-width: 810px) and (max-width: 867px){
-                display: grid;
-            }
-            @media (min-width: 620px) and (max-width: 810px){
+            @media (max-width: 867px){
                 display: flex;
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                display: flex;       
-            }
-            @media (max-width: 500px){
-                display: flex;         
             }
         }
 
@@ -145,17 +103,12 @@ footer {
 
     div.mapa {
         @media (min-width: 810px) and (max-width: 867px){
-            @include GridsUbi (3, 2);
+            @include GridsUbi (3, span 2);
         }
-        @media (min-width: 620px) and (max-width: 810px){
+        @media (max-width: 810px){
             display: none;
         }
-        @media (min-width: 500px) and (max-width: 620px){
-            display: none;
-        }
-        @media (max-width: 500px){
-            display: none; 
-        }
+        
 
         iframe {
             @media (min-width: 810px) and (max-width: 867px){

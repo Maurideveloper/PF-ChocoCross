@@ -44,14 +44,10 @@ main {
                         border-radius: 10%;
 
                         @media (min-width: 500px) and (max-width: 620px){
-                            max-height: 280px;
-                            border: 1px solid black;
-                            border-radius: 10%;
+                            max-height: 280px
                         }
                         @media (max-width: 500px){
-                            max-height: 180px;
-                            border: 1px solid black;
-                            border-radius: 10%;        
+                            max-height: 180px;    
                         }
                     }
                 }

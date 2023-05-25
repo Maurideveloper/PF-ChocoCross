@@ -1,6 +1,7 @@
 main.recetas {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     div.tituloRecetas {
         margin-top: 100px;
@@ -13,10 +14,7 @@ main.recetas {
             font-size: 150px;
             color: #29170a;
             background-color: rgba(233, 215, 159, 0.3);
-            @media (min-width: 867px) and (max-width: 945px) {
-                font-size: 125px;
-            }
-            @media (min-width: 810px) and (max-width: 867px){
+            @media (min-width: 810px) and (max-width: 945px) {
                 font-size: 125px;
             }
 	        @media (min-width: 620px) and (max-width: 810px){
@@ -39,17 +37,9 @@ main.recetas {
                 width: 80px;
                 height: 80px;
             }
-	        @media (min-width: 620px) and (max-width: 810px){
+	        @media (max-width: 810px){
                 width: 60px;
                 height: 60px;     
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                width: 60px;
-                height: 60px;       
-            }
-            @media (max-width: 500px){
-                width: 60px;
-                height: 60px;          
             }
     
         }
@@ -78,26 +68,11 @@ main.recetas {
         display: flex;
         justify-content: space-evenly;
 
-        @media (min-width: 867px) and (max-width: 945px){
+        @media (max-width: 945px){
             align-items: center;
             flex-direction: column;
         }
-        @media (min-width: 810px) and (max-width: 867px){
-            align-items: center;
-            flex-direction: column;
-        }
-        @media (min-width: 620px) and (max-width: 810px){
-            align-items: center;
-            flex-direction: column;
-        }
-        @media (min-width: 500px) and (max-width: 620px){
-            align-items: center;
-            flex-direction: column;
-        }
-        @media (max-width: 500px){
-            align-items: center;
-            flex-direction: column;
-        }
+        
 
         div.pasoRecetas {
             background-image: url(../images/fa22551f4470b96099a1c357c48e2a40aa.jpeg);
@@ -114,20 +89,8 @@ main.recetas {
             align-items: center;
             justify-content: flex-start;
 
-            @media (min-width: 867px) and (max-width: 945px) {
+            @media (max-width: 945px) {
                margin-bottom: 40px;
-            }
-            @media (min-width: 810px) and (max-width: 867px){
-                margin-bottom: 40px;
-            }
-	        @media (min-width: 620px) and (max-width: 810px){
-                margin-bottom: 40px;
-            }
-            @media (min-width: 500px) and (max-width: 620px){
-                margin-bottom: 40px;   
-            }
-            @media (max-width: 500px){
-                margin-bottom: 40px;    
             }
 
         

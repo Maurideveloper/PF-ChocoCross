@@ -9,19 +9,7 @@ div.buscador {
                 @include Positions (none, absolute);
                 padding: 10px;
                 left: -235px;
-                @media (min-width: 867px) and (max-width: 945px) {
-                    left: -285px;
-                }
-                @media (min-width: 810px) and (max-width: 867px){
-                    left: -285px;
-                }
-                @media (min-width: 620px) and (max-width: 810px){
-                    left: -285px;
-                }        
-                @media (min-width: 500px) and (max-width: 620px){
-                    left: -285px;
-                }
-                @media (max-width: 500px){
+                @media (max-width: 945px) {
                     left: -285px;
                 }
     
