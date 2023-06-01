@@ -785,8 +785,14 @@ main.productos article.contenedor1 section div.card .animated:hover {
   transform: scale(1.05);
 }
 main.productos article.contenedor1 section div.card img {
-  height: 300px;
-  width: 100%;
+  height: 350px;
+  width: 350px;
+}
+@media (max-width: 1349px) {
+  main.productos article.contenedor1 section div.card img {
+    height: 300px;
+    width: 100%;
+  }
 }
 @media (max-width: 810px) {
   main.productos article.contenedor1 section div.card img {
