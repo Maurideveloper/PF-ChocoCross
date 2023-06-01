@@ -788,7 +788,7 @@ main.productos article.contenedor1 section div.card img {
   height: 350px;
   width: 350px;
 }
-@media (min-width: 810px) and (max-width: 1300px) {
+@media (max-width: 1349px) {
   main.productos article.contenedor1 section div.card img {
     height: 300px;
     width: 100%;
