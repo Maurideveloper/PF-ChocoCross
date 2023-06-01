@@ -95,7 +95,7 @@ header.menu nav ul li a {
   text-decoration: none;
   padding: 0.2em 1em;
   font-family: "Lobster Two", cursive;
-  font-size: larger;
+  font-size: x-large;
 }
 header.menu nav ul li img {
   display: none;
@@ -164,6 +164,7 @@ header.menu div.buscador input.buscar {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.2;
+  outline: none;
 }
 @media (max-width: 620px) {
   header.menu div.buscador input.buscar {
@@ -267,7 +268,7 @@ header.menu nav ul li:hover ul li a {
 header.menu nav ul li:hover ul li a:hover {
   background: rgb(114, 90, 59);
   color: white;
-  width: 107px;
+  width: 134px;
 }
 header.menu nav ul ul {
   display: none;
@@ -1054,6 +1055,7 @@ main.recetas div.nombreRecetas {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  color: white;
 }
 main.recetas div.nombreRecetas h2 {
   margin-top: 100px;
@@ -1100,6 +1102,9 @@ main.recetas div.contenidoRecetas div.pasoRecetas {
 main.recetas div.contenidoRecetas div.pasoRecetas p {
   padding-right: 40px;
   padding-top: 10px;
+}
+main.recetas div.contenidoRecetas div.pasoRecetas div p {
+  margin-left: 10px;
 }
 main.recetas div.contenidoRecetas div.videoRecetas {
   height: 500px;

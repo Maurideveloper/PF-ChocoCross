@@ -68,7 +68,7 @@ header.menu {
                     color: map-get($Colores, blanco);
                     text-decoration: none;
                     padding: .2em 1em;
-                    @include Fonts (map-get($Fonts, lobster),map-get($Fonts, large));
+                    @include Fonts (map-get($Fonts, lobster),map-get($Fonts, large2));
                 }
 
                 img {
@@ -141,6 +141,7 @@ header.menu {
             @include ModificarContenedor (0px, 5px, none);
             @include Fonts (map-get($Fonts, sans), 14px);
             line-height: 1.2;
+            outline: none;
 
             @media (max-width: 620px){
                 display: none;  

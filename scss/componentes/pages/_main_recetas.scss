@@ -49,6 +49,7 @@ main.recetas {
         margin-top: 30px;
         display: flex;
         justify-content: center;
+        color: map-get($Colores, blanco);
 
         h2 {
             margin-top: 100px;
@@ -97,6 +98,14 @@ main.recetas {
             p{
                 padding-right: 40px;
                 padding-top: 10px;
+            }
+
+            div {
+
+                p {
+                    margin-left: 10px;
+                }
+
             }
         }
 
