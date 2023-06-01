@@ -84,7 +84,7 @@ main.productos{
                 height: 350px;
                 width: 350px;
 
-                @media (max-width: 1349px){
+                @media  (min-width: 810px) and (max-width: 1300px){
                     height: 300px;
                     width: 100%;
                 }
